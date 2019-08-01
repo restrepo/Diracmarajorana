@@ -1,7 +1,3 @@
-    \mathcal{V}(H_{u}, H_{d}, S, \eta, \sigma) = & \mathcal{V}(H_{u}) + \mathcal{V}(H_{d}) + \mathcal{V}(S) + \mathcal{V}(\eta) + \mathcal{V}(\sigma) \\
-
-    \mathcal{V}(H_{u}, H_{d}, S, \eta, \sigma) = & \mathcal{V}(H_{u}) + \mathcal{V}(H_{d}) + \mathcal{V}(S) + \mathcal{V}(\eta) + \mathcal{V}(\sigma) \\
-
 %%
 %% This is file `apsrev4-1long.bst',
 %% generated with the docstrip utility.
