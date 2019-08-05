@@ -204,20 +204,23 @@ The rest of the paper is organized as follows. In the next section we present th
 %
 We extend the standard model with a spontaneously broken Abelian gauge symmetry  which guarantees the total lepton number $L$ conservation. Only the new particles including the light right handed neutrinos are charged under this symmetry. We choose the new particle set such that the following dimension six operator is genuinely realized
 \begin{align}
+  \label{eq:ld6}
   \mathcal{L}_{6D}=\frac{1}{\Lambda^2} \overline{L_i} H \nu_R S^2\,,
 \end{align}
 where $S$ is the singlet scalar field which can spontanouely break the $\operatorname{U}(1)_X$ symmetry.
 
 With the aim to illustrate the one-loop Dirac neutrino mass generation
-we consider the particle content shown in Table
-\ref{tab:partcont}. Specifically, we introduce three scalar fields
-($\eta, \sigma$ and $S$), where only $S$ develops a nonzero vacuum expectation
-value (VEV), and two sets of three singlet fermions, $\nu_{Ri}$ and
-$\nu_{R3}$, and $\psi_{R\alpha}$, where $i=1,2$ and $\alpha=1,2,3$.  The model also
-includes an additional $U(1)_X$ gauge symmetry which is used to forbid
-the Dirac and Majorana neutrino mass terms at tree level.
+we consider the particle content shown in Table \ref{tab:partcont} as
+a possible the realization of the effective operator in
+ec.~\eqref{eq:ld6}. Specifically, we introduce three scalar fields
+($\eta, \sigma$ and $S$), where only $S$ develops a nonzero vacuum
+expectation value (VEV), and two sets of three singlet fermions,
+$\nu_{Ri}$ and $\nu_{R3}$, and $\psi_{R\alpha}$, where $i=1,2$ and
+$\alpha=1,2,3$.  The model also includes an additional $U(1)_X$ gauge
+symmetry which is used to forbid the Dirac and Majorana neutrino mass
+terms at tree level.
 %Additionally, we add three right neutrinos, one scalar doublet, two scalar singlets and three Majorana fermion singlet under $SU(2)_L$.
-The $U(1)_X$ charge for the new particles will be defined by the anomaly cancellation conditions and the gauge invariance in Yukawa and scalar interactions.
+The $U(1)_X$ charges for the new particles are defined by the anomaly cancellation conditions and the gauge invariance in Yukawa and scalar interactions.
 %In this model the neutrinos are Dirac fermions. Particle content and their respective charges are show in Tab.~\ref{tab:partcont}. 
 
 The most general Lagrangian contains the following Yukawa and scalar interactions:
@@ -233,14 +236,17 @@ The scalar potential can be cast as
 %
 \begin{align*}
     \mathcal{V}(H, S, \eta, \sigma) = & V(H) + V(S) + V(\eta) + V(\sigma) \\
-    &+  \lambda_{1} (H^{\dagger} H ) (S^{\dagger} S) + \lambda_{2} (H^{\dagger} H ) (\sigma^{\dagger} \sigma ) + \lambda_{3} (H^{\dagger} H ) (\eta^{\dagger} \eta )\\
-    &+ \lambda_{4} (S^{\dagger} S) (\sigma^{\dagger} \sigma ) + \lambda_{5} (S^{\dagger} S) (\eta^{\dagger} \eta ) + \lambda_{6} (\eta^{\dagger} \eta ) (\sigma^{\dagger} \sigma ) + \lambda_{7} (\eta^{\dagger} H ) (H^{\dagger} \eta ) \\
-    &+ \mu (\eta^{\dagger} H S^{\dagger} \sigma + \text{h.c.})\,,
+    &+  \lambda_{1} (H^{\dagger} H ) (S^{*} S) + \lambda_{2} (H^{\dagger} H ) (\sigma^{*} \sigma ) + \lambda_{3} (H^{\dagger} H ) (\eta^{\dagger} \eta )\\
+    &+ \lambda_{4} (S^{*} S) (\sigma^{*} \sigma ) + \lambda_{5} (S^{*} S) (\eta^{\dagger} \eta ) + \lambda_{6} (\eta^{\dagger} \eta ) (\sigma^{*} \sigma ) + \lambda_{7} (\eta^{\dagger} H ) (H^{\dagger} \eta ) \\
+    &+ \lambda_{8} (\eta^{\dagger} H S^{*} \sigma + \text{h.c.})\,,
 \end{align*}
 %
-with $V(\omega) = \mu^{2}_{\omega} \omega^{\dagger} \omega + \lambda_{\omega} (\omega^{\dagger} \omega)^{2}/2$. We assume $\mu$ real to preserve CP symmetry in the scalar sector, and $\mu^2_\eta,\mu^2_\sigma>0$ to avoid tree-level mixing terms among the fermions. Moreover, the scalar couplings are subject to perturbativity and vacuum stability constraints:
+with $V(\omega) = \mu^{2}_{\omega} \omega^{\dagger} \omega + \lambda_{\omega} (\omega^{\dagger} \omega)^{2}$. After the spontaneous symmetry breaking of $\operatorname{U}(1)_X$ the last term gives raise to the soft trilinear coupling
+\begin{align}
+  \mu=\lambda_8 \langle S \rangle\,.
+\end{align}
+We assume $\mu$ real to preserve CP symmetry in the scalar sector, and $\mu^2_\eta,\mu^2_\sigma>0$ to avoid tree-level mixing terms among the fermions. Moreover, the scalar couplings are subject to perturbativity and vacuum stability constraints:
 \begin{align*}
-Stability constraints\\
 \lambda_{H} &\geq 0\,, & \lambda_{\eta} &\geq 0\,, & \lambda_{S} &\geq 0\,, & \lambda_{\sigma} &\geq 0\,, & \lambda_{1} &\geq 0\,, & \\
 \lambda_{2} &\geq 0\,, &
 \lambda_{3}+\lambda_{7} &\geq 0\,, & \lambda_{4} &\geq 0\,, & \lambda_{5} &\geq 0\,, & \lambda_{6} &\geq 0\,,
@@ -249,23 +255,23 @@ where we can set $\rho^{2} = 1$, because we assume that $\lambda_{7} \leq 0$.
 
 % \subsection{Scalar mass spectrum}
 %\label{sec:ScaMassSpect}
-By denotating the scalar fields as
+To establish the scalar spectrum we expand the scalar fields as
 %
 \begin{align*}
-  H = \begin{pmatrix}G^{\pm} \\ \frac{1}{\sqrt{2}} (\varphi+v_{H}+iG) \end{pmatrix} \,,&\hspace{1cm}
+  H = \begin{pmatrix}G^{\pm} \\ \frac{1}{\sqrt{2}} (\varphi+v_H+iG) \end{pmatrix} \,,&\hspace{1cm}
   \eta = \begin{pmatrix}\eta^{+} \\ \frac{1}{\sqrt{2}}(\eta_R+i\eta_I) \end{pmatrix} \,,\\
   S = \frac{1}{\sqrt{2}} (S_R+v_{S}+iS_I)\,,&\hspace{1cm}\sigma = \frac{1}{\sqrt{2}} (\sigma_R+i\sigma_I),
 \end{align*}
 %
-with $v_H= 246.22$ GeV.  
+with $v= 246.22$ GeV.  
 By minimizing the scalar potential we find that the mass-squared parameters $\mu_H^2$ and $\mu_S^2$
 %
 \begin{align*}
-    \mu^{2}_{H} =& -\frac{1}{2}\left( \lambda_{H}  \upsilon^{2}_{H} + \lambda_{1}  \upsilon^{2}_{S}\right)\,,  &
-    \mu^{2}_{S} =& -\frac{1}{2}\left( \lambda_{S}  \upsilon^{2}_{S} + \lambda_{1}  \upsilon^{2}_{H}\right)\,.
+    \mu^{2}_{H} =& -\frac{1}{2}\left( \lambda_{H}  v^2 + \lambda_{1}  v_S\right)\,,  &
+    \mu^{2}_{S} =& -\frac{1}{2}\left( \lambda_{S}  v^{2}_{S} + \lambda_{1}  v^2\right)\,.
 \end{align*}
 %
-Of the original twelve scalar degrees of freedom in the model, $W^{\pm}$, $Z^{0}$ and $Z^{\prime}$ absorbed four of these (Goldstone bosons $G^{\pm}$,$G$ and $S_{I}$). There is a physical neutral CP-even Higgs state ($\varphi$), one scalar state ($S_{R}$), two CP-even scalar state ($\sigma_{R}$ and $\eta_{R}$), two CP-odd scalar state ($\sigma_{I}$ and $\eta_{I}$) and one charged scalar pairs ($\eta^{\pm}$). The mass spectrum for the scalar sector is given by
+Of the original twelve scalar degrees of freedom in the model\todo{what are the twelve?}, $W^{\pm}$, $Z^{0}$ and $Z^{\prime}$ absorbed four of these (Goldstone bosons $G^{\pm}$,$G$ and $S_{I}$). There is a physical neutral CP-even Higgs state ($\varphi$), one scalar state ($S_{R}$), two CP-even scalar state ($\sigma_{R}$ and $\eta_{R}$), two CP-odd scalar state ($\sigma_{I}$ and $\eta_{I}$) and one charged scalar pairs ($\eta^{\pm}$). The mass spectrum for the scalar sector is given by
 \begin{align*}
     m_{\eta^{\pm}}^{2} &= \mu_{\eta}^{2} + \frac{1}{2} (\lambda_{3} \upsilon^{2}_{H} + \lambda_{5} \upsilon^{2}_{s} )\,, \\
     m_{H}^{2} &= \lambda_{H} \upsilon_{H}^{2} + \mathcal{O}()\,, \\
@@ -294,13 +300,13 @@ where $\tan2\theta_{(R,I)} = \pm2c/(b-a)$ and we defined $a = m^{2}_{\eta^{\pm}}
 \label{fig:zee}
 \end{figure}
 %
- The Dirac neutrino mass matrix in this model is generate to one loop level, which is shown in fig(\ref{fig:zee}). The expression for $\mathcal{M}_{\nu}$ is given by~\cite{Reig:2018mdk}
+ The Dirac neutrino mass matrix in this model is generated at one loop-level according to the diagram in  fig.~\ref{fig:zee}. The expression for $\mathcal{M}_{\nu}$ is given by~\cite{Reig:2018mdk}
 %
 \begin{align}
 (\mathcal{M}_{\nu})_{ij} = \frac{\mu \upsilon_{H} \upsilon_{S}}{32 \pi^{2}} \sum_{a=1}^{3} \frac{h_{i a} M_{\psi_{a}}y^{\dagger}_{a j}} {m_{\chi_{R_2}}^{2}-m_{\chi_{R_1}}^{2}} \left[ F\left( \frac{m_{\chi_{R_2}}^{2}}{M_{\psi_{a}}} \right) - F\left( \frac{m_{\chi_{R_1}}^{2}}{M_{\psi_{a}}} \right) \right] + (R \to I)\,,
 \end{align}
 %
-where $F(m_{S_{\beta}}^{2}/M_{\psi}^{2}) = m_{S_{\beta}}^{2}\log(m_{S_{\beta}}^{2}/M_{\psi})/(m_{S_{\beta}}^{2}-M_{\psi})$ is loop function, $M_{\psi_{a}}$ is the fermión mass  and $\chi_{R_{(1,2)}}$ are the two CP-even mass eigenstate and $\chi_{I_{(1,2)}}$ are two CP-odd mass eigenstate.To obtain neutrino masses it is necessary that $\mu \neq 0$. In addition, To explain the suppression of the mass matrix, it is usually assumed that the mass of the mediator fermions is very large. Another possibility is small values of $\mu$, this suppress the value of the neutrino masses. The structure of the effective neutrino mass matrix is given by the product $(M_{\nu})_{ij} \propto h_{i a} y_{a j}$, which is similar to the structure of the neutrino mass matrix for the tree-level seesaw mechanism for Dirac neutrinos~\cite{Chulia:2016ngi}. If only one fermion $\psi$ is added, we will have two massless neutrinos, which does not agree with the current data obtained from the neutrino experiments~\cite{deSalas:2017kay}. In our case, we will assume the existence of three fermions, generating Dirac scotogenic masses for the two neutrinos ($\nu_{k}$ is massless due to the assignment of charges).
+where $F(m_{S_{\beta}}^{2}/M_{\psi}^{2}) = m_{S_{\beta}}^{2}\log(m_{S_{\beta}}^{2}/M_{\psi})/(m_{S_{\beta}}^{2}-M_{\psi})$ is the loop function, $M_{\psi_{a}}$ is the fermion mass  and $\chi_{R_{(1,2)}}$ ( $\chi_{I_{(1,2)}}$ ) are the two CP-even (CP-odd) mass eigenstates. To obtain neutrino masses it is necessary that $\mu \neq 0$. In addition, To explain the suppression of the mass matrix, it is usually assumed that the mass of the mediator fermions is very large. Another possibility is small values of $\mu$, this suppress the value of the neutrino masses. The structure of the effective neutrino mass matrix is given by the product $(M_{\nu})_{ij} \propto h_{i a} y_{a j}$, which is similar to the structure of the neutrino mass matrix for the tree-level seesaw mechanism for Dirac neutrinos~\cite{Chulia:2016ngi}. If only one fermion $\psi_R$ is added, we will have two massless neutrinos, which does not agree with the current data obtained from the neutrino experiments~\cite{deSalas:2017kay}. In our case, we will assume the existence of three fermions, generating Dirac scotogenic masses for the two neutrinos ($\nu_{k}$ is massless due to the assignment of charges).
 
 For the Dirac neutrinos the mass matrices are diagonalized by
 \begin{align}
@@ -310,7 +316,7 @@ where $U^{(\nu)}_R$ and $U^{(\nu)}_L$  are unitary $3 \times 3$ matrices. In the
 \begin{align}
 U_{\text{PMNS}} = (U^{(\ell)}_L)^{\dagger} U^{(\nu)}_L\,.
 \end{align}
-If we work in the basis where $\ell$ and $\nu_{R}$ are mass eigenstate, the matrices $U_{L}^{(\ell)} = U_{R}^{\nu} = \mathds{1}$. Therefore, we can to express the Dirac neutrino mass matrix following way
+If we work in the basis where $\ell$ and $\nu_{R}$ are mass eigenstates, the matrices $U_{L}^{(\ell)} = U_{R}^{\nu} = \mathds{1}$. Therefore, we can express the Dirac neutrino mass matrix in the following way
 \begin{align}
 (\mathcal{M}_{\nu})_{ij} = (U_{\text{PMNS}})_{ij} (\mathcal{M}_{\nu}^{\text{diag}})_{j}\,,
 \end{align}
@@ -344,7 +350,7 @@ where $s_{ij} = \sin \theta_{ij}$ and $c_{ij} = \cos \theta_{ij}$ and $\theta_{i
 \label{fig:LFV}
 \end{figure}
 %
-The new Yukawa interactions in Eq~\eqref{Eq:LagY} in our model introduce processes that violate the leptonic flavor in the charged sector (CLFV). These CLFV processes are induced at one loop level, as shown in the figure~\ref{fig:LFV}. In this case, the $\overline{L} \tilde{\eta} \psi_{R}$ interaction allows the part of the double scalar $\eta$ ($\eta^{\pm}$) to mediate in the loop.
+The new Yukawa interactions in Eq~\eqref{Eq:LagY} in our model introduce processes that violate the leptonic flavor in the charged sector (CLFV). These CLFV processes are induced at one loop level, as shown in the fig.~\ref{fig:LFV}. In this case, the $\overline{L} \tilde{\eta} \psi_R$ interaction allows the part of the double scalar $\eta$ ($\eta^{\pm}$) to mediate in the loop.
 
 The most common search for CLFV focuses on the $l^{-}_{i} \to l^{-}_{j} \gamma$ process. This process is described by the effective Lagrangian
 %
@@ -493,13 +499,32 @@ where the Hubble expansion parameter is
 %
 where $21/4$ correspond to the contribution of the right neutrinos to relativistic degrees of freedom. By finding the decoupling temperature of the right neutrinos $T^{\nu_R}_{dec} $ by a root finding method, it is possible to calculate $\Delta N_{eff}$.
 
-The results of $T^{\nu_R}_{dec}$ and $\Delta N_{eff}$ as a function of $M_{Z^{\prime}}/g^{\prime}$ are exhibited in Fig~\ref{fig:Neff}. We can see that for small decoupling temperatures, the variation in the number of relativistic degrees of freedom of the new species is large and vice versa. The bound that come from Planck~\cite{ghanim:2018eyx}
+The results of $T^{\nu_R}_{dec}$ and $\Delta N_{eff}$ as a function of $M_{Z^{\prime}}/g^{\prime}$ are exhibited in fig.~\ref{fig:Neff}. We can see that for small decoupling temperatures, the variation in the number of relativistic degrees of freedom of the new species is large and vice versa. The bound that come from Planck~\cite{ghanim:2018eyx}
 
 \includegraphics[scale=0.9]{DeltaNeff.pdf}
 
 is stronger than the bound of LEP~\cite{Alioli:2017nzr}. For our model we find that $M_{Z^{\prime}}/g^{\prime} \gtrsim 60$TeV in order to satisfy the conditions of $N_{eff}$.
 
 \appendix
+
+\section{General solution}
+
+The general solution to fig.~\ref{fig:zee} is
+\begin{align}
+  L=&\nu_R+4\psi_R -H \,,& S=& 2\psi_R \nonumber\\
+  \sigma=& -\nu_R-\psi_R\,,& \eta=& H-\nu_R-3\psi_R\,.
+\end{align}
+The consistency condition for $H=0$ is
+\begin{align}
+  L=\nu_R+4\psi_R\,.
+\end{align}
+
+On the other hand, if the second singlet scalar in the quartic vertex is $S'$, we have
+\begin{align}
+  L=-H+\nu_R+2\psi_R+S'\to \nu_R+2\psi_R+S'\,.
+\end{align}
+
+
 
 %\bibliographystyle{h-physrev4}
 %\bibliographystyle{JHEP-2}
