@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="1.8.0_212" class="java.beans.XMLDecoder">
+<java version="1.8.0_222" class="java.beans.XMLDecoder">
  <object class="net.sf.jaxodraw.graph.JaxoSaveGraph" id="JaxoSaveGraph0">
   <void property="jaxoDrawVersion">
    <string>2.1-0</string>
@@ -80,9 +80,6 @@
      </void>
      <void property="color">
       <object idref="Color0"/>
-     </void>
-     <void property="flip">
-      <boolean>true</boolean>
      </void>
      <void property="paintArrow">
       <boolean>true</boolean>
@@ -707,6 +704,9 @@
      <void property="color">
       <object idref="Color0"/>
      </void>
+     <void property="flip">
+      <boolean>true</boolean>
+     </void>
      <void property="paintArrow">
       <boolean>true</boolean>
      </void>
@@ -884,7 +884,7 @@
       <object idref="PointArray16"/>
      </void>
      <void property="textString">
-      <string>\psi</string>
+      <string>\psi_R</string>
      </void>
     </object>
    </void>
@@ -921,7 +921,7 @@
       <object idref="PointArray17"/>
      </void>
      <void property="textString">
-      <string>\psi</string>
+      <string>\psi_R</string>
      </void>
     </object>
    </void>
