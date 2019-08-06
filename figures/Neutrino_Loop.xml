@@ -452,6 +452,9 @@
      <void property="dash">
       <float>10.0</float>
      </void>
+     <void property="flip">
+      <boolean>true</boolean>
+     </void>
      <void property="paintArrow">
       <boolean>true</boolean>
      </void>
@@ -529,6 +532,9 @@
      </void>
      <void property="dash">
       <float>10.0</float>
+     </void>
+     <void property="flip">
+      <boolean>true</boolean>
      </void>
      <void property="paintArrow">
       <boolean>true</boolean>
