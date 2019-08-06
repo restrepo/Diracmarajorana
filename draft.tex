@@ -182,11 +182,11 @@ The rest of the paper is organized as follows. In the next section we present th
   \centering
   \begin{tabular}{|c|c|c|c|}
     \hline  
-    Fields     & $SU(2)_L$ & $U(1)_Y $ & $U(1)_X$ \\ \hline
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_X$ \\ \hline
     % $H $  & 2  1/2  &  0 \\
-    $\eta$  & 2 & 1/2  & $1$ \\
-    $S$ & 1 & 0  & $2$ \\
-    $\sigma$ & 1 & 0 & $3$ \\
+    $\eta$  & $\boldsymbol{2}$ & $1/2$  & $1$ \\
+    $S$ & $\boldsymbol{1}$ & $0$  & $2$ \\
+    $\sigma$ & $\boldsymbol{1}$ & $0$ & $3$ \\
     \hline
     % $Q_{L_{i}}$  & $(2,-1/6)$ & $0$ \\
     % $\overline{u_{R_{i}}}$ & $(1,-2/3)$ & $0$ \\
@@ -194,11 +194,11 @@ The rest of the paper is organized as follows. In the next section we present th
     % \hline
     % $L_i$  & $(2,-1/2)$ & $0$ \\
     % $\overline{e_{R_i}}$ & $(1,1)$ & $0$ \\
-    $\nu_{Ri}$ & 1 & 0 & -4\\
-    $\nu_{R3}$ & 1 & 0 & $5$\\
-    $\psi_{R\alpha}$  & 1 & 0 & $1$ \\\hline
+    $\nu_{Ri}$ & $\boldsymbol{1}$ & $0$ & $-4$\\
+    $\nu_{R3}$ & $\boldsymbol{1}$ & $0$ & $5$\\
+    $\psi_{R\alpha}$  & $\boldsymbol{1}$ & 0 & $1$ \\\hline
   \end{tabular}
-  \caption{The new scalars and fermions with their respective charges. All the SM fields are neutral under the new $U(1)_X$ gauge symmetry. }
+  \caption{The new scalars and fermions with their respective charges. All the SM fields are neutral under the new $\operatorname{U}(1)_X$ gauge symmetry. }
     \label{tab:partcont}
 \end{table}
 %
@@ -216,11 +216,11 @@ ec.~\eqref{eq:ld6}. Specifically, we introduce three scalar fields
 ($\eta, \sigma$ and $S$), where only $S$ develops a nonzero vacuum
 expectation value (VEV), and two sets of three singlet fermions,
 $\nu_{Ri}$ and $\nu_{R3}$, and $\psi_{R\alpha}$, where $i=1,2$ and
-$\alpha=1,2,3$.  The model also includes an additional $U(1)_X$ gauge
+$\alpha=1,2,3$.  The model also includes an additional $\operatorname{U}(1)_X$ gauge
 symmetry which is used to forbid the Dirac and Majorana neutrino mass
 terms at tree level.
-%Additionally, we add three right neutrinos, one scalar doublet, two scalar singlets and three Majorana fermion singlet under $SU(2)_L$.
-The $U(1)_X$ charges for the new particles are defined by the anomaly cancellation conditions and the gauge invariance in Yukawa and scalar interactions.
+%Additionally, we add three right neutrinos, one scalar doublet, two scalar singlets and three Majorana fermion singlet under $\operatorname{SU}(2)_L$.
+The $\operatorname{U}(1)_X$ charges for the new particles are defined by the anomaly cancellation conditions and the gauge invariance in Yukawa and scalar interactions.
 %In this model the neutrinos are Dirac fermions. Particle content and their respective charges are show in Tab.~\ref{tab:partcont}. 
 
 The most general Lagrangian contains the following Yukawa and scalar interactions:
@@ -454,57 +454,58 @@ phenomena such as inflation~\cite{Lerner:2009xg} and
 baryogenesis~\cite{Cline:2012hg}.
 
 \section{Cosmological constraints}
-\begin{comment}
-%
+
+A not-so-minimal model can be obtained as the one-loop realization of
+the effective 5-dimensional operator for Dirac neutrino masses~\cite{}
+\begin{align}
+  \label{eq:ld5}
+  \mathcal{L}_{5D}=\frac{1}{\Lambda} \overline{L_i} H \nu_R S\,,
+\end{align}
+as displayed in fig.~\ref{fig:ld5}. In this case we use the usual $\operatorname{U}(1)_{B-L}$ for the lepton doublet, so that an extra set of quiral fermion needs to be added in a vector-like way to cancel out the anomalies. The assignment is displayed in Table~\ref{tab:partcont2}
+
+
 \begin{figure}
 \centering
-\includegraphics[scale=0.6]{Tdec.pdf}
-\includegraphics[scale=0.6]{Delta_Neff1.pdf}
-\caption{One-loop generation of Dirac neutrino mass}
-\label{fig:Neff}
+\includegraphics[scale=0.75]{Neutrino2.pdf}
+\caption{One-loop realization of the dimension-5 effective Dirac neutrino mass operator }
+\label{fig:ld5}
 \end{figure}
 %
-\end{comment}
 
-%
 \begin{table}
   \centering
-  \begin{tabular}{|l|l|c|c|}
+  \begin{tabular}{|c|c|c|c|}
     \hline  
-    Particles     & $\left( SU(2)_L, U(1)_Y \right)$ & $U(1)_{L}$& $Z_2$\\ \hline
-    $H $  & $(2, 1/2)$ &  0 &$+$\\
-    $\eta$ & $(2,1/2)$ & $1-\psi\to 5/2$ &$-$\\
-    $S$ & $(1,0)$ & $-2\psi\to 3$ &$+$\\
-    $\sigma$ & $(1,0)$ & $\nu+\psi=\eta=1-\psi\to 5/2$&$-$\\
-    $L_i$  & $(2,-1/2)$ & $-1$& $+$\\
-    $\overline{e_{R_i}}$ & $(1,1)$ & $+1$ & $+$ \\
-    $\overline{\nu_{R_{i,j}}}$ & $(1,0)$ & $\nu\to 1-2\psi\to 4$&$+$\\
-    $\overline{\nu_{R_k}}$ & $(1,0)$ & $\nu_k$&$+$\\
-    $\psi_{i}$  & $(1,0)$ & $\psi\to -3/2$ &$-$\\\hline
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{B-L}$ \\ \hline
+     $L $  & $\boldsymbol{1}$& $-1/2$  &  $-1$ \\
+    $\eta$  & $\boldsymbol{2}$ & $+1/2$  & $4-r$ \\
+    $S$ & $\boldsymbol{1}$ & $0$  & $2r$ \\
+    $\sigma$ & $\boldsymbol{1}$ & $0$ & $4-r$ \\
+    \hline
+     $\nu_{Ri}$ & $\boldsymbol{1}$ & $0$ & $-4$\\
+    $\nu_{R3}$ & $\boldsymbol{1}$ & $0$ & $5$\\
+    $\psi_{R\alpha}$  & $\boldsymbol{1}$ & $0$ & $r$ \\\hline
+    $\xi_{L\alpha}$  & $\boldsymbol{1}$ & $0$ & $r$ \\\hline
   \end{tabular}
-  \caption{Scalars and left-handed fermions with their respective charges.}
-  \label{tab:partcont}
+  \caption{The new scalars and fermions with their respective charges. All the SM fields are neutral under the new $\operatorname{U}(1)_X$ gauge symmetry. Now $\alpha=1,2$}
+    \label{tab:partcont2}
 \end{table}
-%
 
-The solution in Table~\ref{tab:partcont} is no anomaly free. To have $L=-1$ while keeping the same minimal set of scalars would require anomaly solutions with at least two pairs of the very same lepton charges, such that
-\begin{align}
-    2\psi+2\nu+\cdots=&3 \nonumber\\
-    2\psi^3+2\nu^3+\cdots=&3
-\end{align}
-If we introduce two additional left-handed fields $(\xi_i)^\dagger$,  with $U(1)_L$ $+3/2$, the anomalies cancel out. Moreover, we have both Dirac mass terms $(\Upsilon_i)^\dagger\psi_j$ and $ \Upsilon_i \Upsilon_j \langle S\rangle$ and the full set of Majorana fields are massive and heavy. The lighter of them a would be dark matter particle.
+In this way we end up with a model with four Majorana fermions, one more than in the minimal solution. Alternatively we can have a single set of $\psi_R$ and $\xi_L$ but with two set of scalars $\eta_\alpha$, $\sigma_{\alpha}$~\cite{Reig:2018mdk}. If we choose $r$ as a fraction with denominator $2$, let say $r=3/2$, the $\operatorname{U}(1)_{B-L}$ left out a remnant $Z_2$ discrete symmetry which guarantees the stability of the lightest odd-particle.
 
-\footnote{Check 2r+2nu: -2,6,7,-9,-3  3r+2nu: -(5/2),7/2,-7,6,9/2}
+The two additional left-handed fields $\xi_{L\alpha}$,  with a $\operatorname{U}(1)_{B-L}$ charge of $r=3/2$,  cancel out the anomalies. Moreover, we have both Dirac mass terms $\overline{\xi_{L \alpha}}\psi_{R \beta}$ and $ \overline{\xi_{L\alpha}^c }\xi_{L \beta} \langle S\rangle$ and the full set of Majorana fields are massive and heavy. The lighter of them a would be dark matter particle.
 
-The existence of three new right neutrinos in nature contribute to the total energy density of the universe. These new contributions can modify the cosmological observables in the CMB (cosmic microwave background). These new neutrinos contribute to the existence of dark radiation, which affects the expansion processes of the universe, which affects the number of relativistic degrees of freedom for neutrinos.
+% \footnote{Check 2r+2nu: -2,6,7,-9,-3  3r+2nu: -(5/2),7/2,-7,6,9/2}
 
-In the case of our models, this new gauge symmetry introduces a new gauge boson that mediates the interaction of the right neutrinos and the SM. This allows the right neutrinos to thermally modify the relativistic degrees of freedom, this contributions are given by~\cite{Anchordoqui:2012qu, Anchordoqui:2011nh}
+The existence of three new right neutrinos in nature contribute to the total energy density of the universe. These new contributions can modify the cosmological observables in the cosmic microwave background (CMB). These new neutrinos contribute to the existence of dark radiation, which affects the expansion processes of the universe and the number of relativistic degrees of freedom for neutrinos.
+
+In the case of our model, the new gauge symmetry introducesa  new gauge boson that mediates interaction of the right neutrinos and the SM. This allows the right neutrinos to thermally modify the relativistic degrees of freedom with contributions given by~\cite{Anchordoqui:2012qu,Anchordoqui:2011nh}
 %
 \begin{align*}
-    \Delta N_{eff} = N_{eff} - N^{SM}_{eff} = N_{\nu_R} \left( \frac{T_{\nu_{R}}}{T_{\nu_{L}}} \right)^{4} = N_{\nu_R} \left( \frac{g(T^{\nu_{L}}_{dec})}{g(T^{\nu_{R}}_{dec})} \right)^{4}
+    \Delta N_{\text{eff}} = N_{\text{eff}} - N^{SM}_{\text{eff}} = N_{\nu_R} \left( \frac{T_{\nu_{R}}}{T_{\nu_{L}}} \right)^{4} = N_{\nu_R} \left( \frac{g(T^{\nu_{L}}_{\text{dec}})}{g(T^{\nu_{R}}_{\text{dec}})} \right)^{4}
 \end{align*}
 %
-where $ g(T) $ is the number of relativistic degrees of freedom at a temperature $T$ in the SM~\cite{Aghanim:2018eyx}. The decoupling temperature of the left neutrinos $\nu_L$ is $ T^{\nu_{L}}_{dec} \approx 2.3 $ MeV~\cite{Enqvist:1991gx}, when $g(T^{\nu_{L}}_{ dec}) = 43/4 $ corresponding to the three $\nu_{L}$, $e^{\pm} $ and the photon~\cite{Kolb:1990vq}. The rate of interaction of the right neutrinos with the SM is mediated by the gauge boson $Z^{\prime} $ and is given by~\cite{SolagurenBeascoa:2012cz}
+where $ g(T) $ is the number of relativistic degrees of freedom at a temperature $T$ in the SM~\cite{Aghanim:2018eyx}. The decoupling temperature of the left neutrinos $\nu_L$ is $ T^{\nu_{L}}_{\text{dec}} \approx 2.3 $ MeV~\cite{Enqvist:1991gx}, when $g(T^{\nu_{L}}_{ \text{dec}}) = 43/4 $ corresponding to the three $\nu_{L}$, $e^{\pm} $ and the photon~\cite{Kolb:1990vq}. The rate of interaction of the right neutrinos with the SM is mediated by the gauge boson $Z^{\prime} $ and is given by~\cite{SolagurenBeascoa:2012cz}
 %
 \begin{align*}
     \Gamma_{\nu_R} (T) &= n_{\nu_R}(T) \langle \sigma(\overline{\nu_{R}} \nu_{R} \to \overline{f} f) \upsilon \rangle \,, \\
@@ -516,7 +517,7 @@ where $f_{\nu_R}(k)=1/(e^{k/T}+1)$ is the Fermi-Dirac distributión, $g_{\nu_R} 
 n_{\nu_R}(T) = g_{\nu_R} \int \frac{d^{3} k}{(2 \pi)^{3}} f_{\nu_R}(k)\,.
 \end{align*}
 
-The cross section is given in~\cite{Barger:2003zh}, in the case with heavy mediator $T^{\nu_R}_{dec} \ll M_{Z^{\prime}}$, we can to take the limit when $s \ll M_{Z^{\prime}}$ and neglecting the fermion masse, we have that the cross section is
+The cross section is given in~\cite{Barger:2003zh}, in the case with heavy mediator $T^{\nu_R}_{\text{dec}} \ll M_{Z^{\prime}}$, we can to take the limit when $s \ll M_{Z^{\prime}}$ and neglecting the fermion masse, we have that the cross section is
 %
 \begin{align*}
     \sigma_{f}(s) \approx N^{C}_{f} \frac{s}{12 \pi} \left( \frac{g^{\prime}}{M_{Z^{\prime}}} \right)^{4} Q^{2}_{\nu_R} (Q^{2}_{f_L} + Q^{2}_{f_R})\,,
@@ -532,14 +533,14 @@ where $N^{C}_{f}$ is the color multiplicity of the fermion, i.e. $N^{C}_{q(\ell)
 \begin{figure}
 \centering
 \includegraphics[scale=0.8]{DeltaNeff.pdf}
-\caption{In the upper panel is the decoupling temperature of the right neutrino $\nu_{R}$ in function of $M_{z^{\prime}}/g^{\prime}$. In the lower panel is the additional contribution to the number of relativistic degrees of freedom ($\Delta N_{eff}$) in function of $M_{z^{\prime}}/g^{\prime}$. The gray shaded region is excluded by the measurements in the Planck CMB~\cite{Aghanim:2018eyx}. The region shaded in violet shows the bound from LEP  LEP~\cite{Alioli:2017nzr}.}
+\caption{In the upper panel is the decoupling temperature of the right neutrino $\nu_{R}$ in function of $M_{z^{\prime}}/g^{\prime}$. In the lower panel is the additional contribution to the number of relativistic degrees of freedom ($\Delta N_{\text{eff}}$) in function of $M_{z^{\prime}}/g^{\prime}$. The gray shaded region is excluded by the measurements in the Planck CMB~\cite{Aghanim:2018eyx}. The region shaded in violet shows the bound from LEP  LEP~\cite{Alioli:2017nzr}.}
 \label{fig:Neff}
 \end{figure}
 %
-where the sum is performed over all SM fermion that are in thermal equilibrium with the plasma at temperature T. To estimate the contribution to relativistic degrees of freedom for neutrinos, it is necessary to calculate the decoupling temperature of the right neutrinos ($T^{\nu_R}_{dec}$). The latter occurs when the interaction rate of neutrinos with the SM drop below the rate of expansion of the universe, i.e.
+where the sum is performed over all SM fermion that are in thermal equilibrium with the plasma at temperature T. To estimate the contribution to relativistic degrees of freedom for neutrinos, it is necessary to calculate the decoupling temperature of the right neutrinos ($T^{\nu_R}_{\text{dec}}$). The latter occurs when the interaction rate of neutrinos with the SM drop below the rate of expansion of the universe, i.e.
 %
 \begin{align*}
-\Gamma(T^{\nu_R}_{dec}) = H(T^{\nu_R}_{dec})\,, 
+\Gamma(T^{\nu_R}_{\text{dec}}) = H(T^{\nu_R}_{\text{dec}})\,, 
 \end{align*}
 %
 where the Hubble expansion parameter is
@@ -548,9 +549,9 @@ where the Hubble expansion parameter is
     H(T) = \sqrt{\frac{8 \pi G_{N} \rho(T)}{3}} = \sqrt{\frac{4 \pi^{3} G_{N}}{45} \left( g(T) + \frac{21}{4} \right)} T^{2}\,,
 \end{align*}
 %
-where $21/4$ correspond to the contribution of the right neutrinos to relativistic degrees of freedom. By finding the decoupling temperature of the right neutrinos $T^{\nu_R}_{dec} $ by a root finding method, it is possible to calculate $\Delta N_{eff}$.
+where $21/4$ correspond to the contribution of the right neutrinos to relativistic degrees of freedom. By finding the decoupling temperature of the right neutrinos $T^{\nu_R}_{\text{dec}} $ by a root finding method, it is possible to calculate $\Delta N_{\text{eff}}$.
 
-The results of $T^{\nu_R}_{dec}$ and $\Delta N_{eff}$ as a function of $M_{Z^{\prime}}/g^{\prime}$ are exhibited in fig.~\ref{fig:Neff}. We can see that for small decoupling temperatures, the variation in the number of relativistic degrees of freedom of the new species is large and vice versa. The bound that come from Planck~\cite{ghanim:2018eyx}
+The results of $T^{\nu_R}_{\text{dec}}$ and $\Delta N_{\text{eff}}$ as a function of $M_{Z^{\prime}}/g^{\prime}$ are exhibited in fig.~\ref{fig:Neff}. We can see that for small decoupling temperatures, the variation in the number of relativistic degrees of freedom of the new species is large and vice versa. The bound that come from Planck~\cite{ghanim:2018eyx}
 
 \includegraphics[scale=0.9]{DeltaNeff.pdf}
 
@@ -562,8 +563,8 @@ is stronger than the bound of LEP~\cite{Alioli:2017nzr}. For our model we find t
 
 The general solution to fig.~\ref{fig:zee} is
 \begin{align}
-  L=&\nu_R+4\psi_R -H \,,& S=& 2\psi_R \nonumber\\
-  \sigma=& -\nu_R-\psi_R\,,& \eta=& H-\nu_R-3\psi_R\,.
+  L=&\nu_R+4\psi_R -H \,,& \eta=& H-\nu_R-3\psi_R \nonumber\\
+  \sigma=& -\nu_R-\psi_R\,,&S=& 2\psi_R \,.
 \end{align}
 The consistency condition for $H=0$ is
 \begin{align}
@@ -572,7 +573,9 @@ The consistency condition for $H=0$ is
 
 On the other hand, if the second singlet scalar in the quartic vertex is $S'$, we have
 \begin{align}
-  L=-H+\nu_R+2\psi_R+S'\to \nu_R+2\psi_R+S'\,.
+  L=&-H+\nu_R+2\psi_R+S'\to \nu_R+2\psi_R+S'\,, &
+  \eta=&H-\nu_R-\psi_R-S' \nonumber\\
+  \sigma=& -\nu_R-\psi_R\,,&S=& 2\psi_R \,.
 \end{align}
 
 
@@ -593,5 +596,5 @@ On the other hand, if the second singlet scalar in the quartic vertex is $S'$, w
 %%% TeX-master: "draft"
 %%% ispell-local-dictionary: "american"
 %%% End: 
-The cross section is given in [], in the case with heavy mediator $T^{\nu_R}_{dec} \ll M_{Z^{\prime}}$, we can to take the limit when $s \ll M_{Z^{\prime}}$ and neglecting the fermion masse, we have that the cross section is
+The cross section is given in [], in the case with heavy mediator $T^{\nu_R}_{\text{dec}} \ll M_{Z^{\prime}}$, we can to take the limit when $s \ll M_{Z^{\prime}}$ and neglecting the fermion masses, we have that the cross section is
 
