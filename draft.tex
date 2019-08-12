@@ -284,7 +284,7 @@ The neutral mass eigenstate are defined as
     \begin{pmatrix}\chi_{(R,I)_{1}} \\ \chi_{(R,I)_{2}} \end{pmatrix} =& \begin{pmatrix} c_{\theta_{(R,I)}} & -s_{\theta_{(R,I)}} \\ s_{\theta_{(R,I)}} & c_{\theta_{(R,I)}} \end{pmatrix} \begin{pmatrix}\sigma_{(R,I)} \\ \eta_{(R,I)} \end{pmatrix} \,,
 \end{align*}
 %
-where $\tan2\theta_{(R,I)} = \pm2c/(b-a)$ and we defined $a = m^{2}_{\eta^{\pm}} + \frac{1}{2}\lambda_{7} \upsilon^{2}_{H}$, $b = \mu^{2}_{\sigma}+\frac{1}{2}(\lambda_{2} \upsilon^{2}_{H} + \lambda_{4} \upsilon^{2}_{S})$ and $c = \frac{1}{2}\mu \upsilon_{H} \upsilon_{S}$\,. The corresponding mass eigenvalues are
+where $\tan2\theta_{(R,I)} = \pm2c/(b-a)$ and we defined $a = m^{2}_{\eta^{\pm}} + \frac{1}{2}\lambda_{7} \upsilon^{2}_{H}$, $b = \mu^{2}_{\sigma}+\frac{1}{2}(\lambda_{2} \upsilon^{2}_{H} + \lambda_{4} \upsilon^{2}_{S})$ and $c = \frac{1}{2}\lambda_8 v_{H} v_{S}$\,. The corresponding mass eigenvalues are
 \begin{align*}
     m_{\chi_{R(1,2)}}^{2} &= \frac{1}{2} \left(a + b \mp \sqrt{(a-b)^{2} + 4c^{2}} \right)\,, \\
      m_{\chi_{I(1,2)}}^{2} &= \frac{1}{2} \left(a + b \mp \sqrt{(a-b)^{2} - 4c^{2}} \right)\,,
@@ -310,7 +310,7 @@ $, with masses $M_{\psi_a}$ ($a=1,2,3$).
  The Dirac neutrino mass matrix in this model is generated at one loop-level according to the diagram in  fig.~\ref{fig:zee}. The expression for $\mathcal{M}_{\nu}$ is given by~\cite{Reig:2018mdk}
 %
 \begin{align}
-(\mathcal{M}_{\nu})_{ij} = \frac{\lambda_8 v_S v}{32 \pi^{2}} \sum_{a=1}^{3} \frac{h_{i a} M_{\psi_{a}}y^{\dagger}_{a j}} {m_{\chi_{R_2}}^{2}-m_{\chi_{R_1}}^{2}} \left[ F\left( \frac{m_{\chi_{R_2}}^{2}}{M_{\psi_{a}}} \right) - F\left( \frac{m_{\chi_{R_1}}^{2}}{M_{\psi_{a}}} \right) \right] + (R \to I)\,,
+(\mathcal{M}_{\nu})_{ij} = \frac{\lambda_8 v_S v}{32 \pi^{2}} \sum_{a=1}^{3} \frac{h_{i a} M_{\psi_{a}}y^{\dagger}_{a j}} {m_{\chi_{R_2}}^{2}-m_{\chi_{R_1}}^{2}} \left[ F\left( \frac{m_{\chi_{R_2}}^{2}}{M_{\psi_{a}}^{2}} \right) - F\left( \frac{m_{\chi_{R_1}}^{2}}{M_{\psi_{a}}^{2}} \right) \right] + (R \to I)\,,
 \end{align}
 %
 %check the following formula:
@@ -324,24 +324,37 @@ of $\mu$.
 The structure of the effective neutrino mass matrix is given by the
 product $(M_{\nu})_{ij} \propto h_{i a} y_{a j}$, which is similar to
 the structure of the neutrino mass matrix for the tree-level seesaw
-mechanism for Dirac neutrinos~\cite{Chulia:2016ngi}. If only one
+mechanism for Dirac neutrinos~\cite{Chulia:2016ngi}. 
+
+If only one
 fermion $\psi_R$ is added, we will have two massless neutrinos, which
 does not agree with the current data obtained from the neutrino
 experiments~\cite{deSalas:2017kay}. In our case, we will assume the
 existence of three fermions, generating Dirac scotogenic masses for
 the two neutrinos ($\nu_{k}$ is massless due to the assignment of
-charges).
-
-The mass matrix for Dirac neutrinos is diagonalized by
+charges). If we consider the case in which $m_{\eta^{\pm}}^2 = \mu_{\sigma} \gg \frac{1}{2} \lambda_8 v v_S$ and $\lambda_7$, $\lambda_2$, $\lambda_4 \gg 1$. Taking $m_{\chi_{R_{2}}}-m_{\chi_{R_{1}}} = \lambda_8 v v_{S}$ and $m_{\chi_{R_{2}}}+m_{\chi_{R_{1}}} = 2 m_{\eta^{\pm}}^{2}$ one finds
+%
+\begin{align*}
+(\mathcal{M}_{\nu})_{ij} = \frac{\lambda_8 v_S v}{16 \pi^{2}} \sum_{a=1}^{3} \frac{h_{i a} M_{\psi_{a}}y^{\dagger}_{a j}} {m_{\eta^{\pm}}^{2}-M_{\psi_{a}}^{2}} \left[1 - \frac{M_{\psi_{a}}^{2}}{m_{\eta^{\pm}}^{2}-M_{\psi_{a}}^{2}} \log \left( \frac{m_{\eta^{\pm}}^{2}}{M_{\psi_{a}}^{2}} \right)\right]\,,
+\end{align*}
+%
+and if we take $m_{\eta^{\pm}}^{2} \gg M_{\psi_{a}}^{2}$ one has 
+%
 \begin{align}
-(U^{\nu}_R)^{\dagger} \mathcal{M}_{\nu} U^{\nu}_L = \mathcal{M}_{\nu}^{\text{diag}} = \text{diag}(m_1, m_2, m_3)\,,
+(\mathcal{M}_{\nu})_{ij} & = \frac{\lambda_8 v_S v}{16 \pi^{2}} \sum_{a=1}^{3} \frac{h_{i a} M_{\psi_{a}}y^{\dagger}_{a j}} {m_{\eta^{\pm}}^{2}}\,, \\
+& \sim 0.006~\text{eV} \left( \frac{\lambda_8}{1 \text{GeV}}\right) \left( \frac{v_{S}}{10 \text{TeV}}\right) \left( \frac{M_{\psi_{a}}}{1 \text{TeV}}\right) \left( \frac{50 \text{TeV}}{m_{\eta^{\pm}}}\right)^{2} \left( \frac{h_{i a} y_{a j}^{\dagger}}{10^{-6}}\right)\,. \nonumber
 \end{align}
+%
+The mass matrix for Dirac neutrinos is diagonalized by
+\begin{align*}
+(U^{\nu}_R)^{\dagger} \mathcal{M}_{\nu} U^{\nu}_L = \mathcal{M}_{\nu}^{\text{diag}} = \text{diag}(m_1, m_2, m_3)\,,
+\end{align*}
 where $U^{(\nu)}_R$ and $U^{(\nu)}_L$ are unitary $3 \times 3$
 matrices. The leptonic charged currents with non-massless neutrinos
 are parametrized in terms of the unitary mass
-\begin{align}
+\begin{align*}
 U_{\text{PMNS}} = \left( U^{\ell}_L \right)^{\dagger} U^{\nu}_L\,,
-\end{align}
+\end{align*}
 where is the left diagonalization matrix of the charged leptons.
 As we already are in the diagonal basis after the calculation of the
 one-loop neutrino masses, we can set
@@ -352,7 +365,7 @@ following way
 (\mathcal{M}_{\nu})_{ij} = (U_{\text{PMNS}})_{ij} (\mathcal{M}_{\nu}^{\text{diag}})_{j}\,,
 \end{align}
 where the matrix $U_{\text{PMNS}}$ is expressed in the standard parameterization as
-\begin{align}
+\begin{align*}
 U_{\text{PMNS}} = \begin{pmatrix}
     1 & 0		& 0 \\
     0 & c_{23}  & s_{23} \\
@@ -368,7 +381,7 @@ U_{\text{PMNS}} = \begin{pmatrix}
     -s_{12} & c_{12} & 0 \\
     0		& 0		 & 1
 \end{pmatrix}\,,
-\end{align}
+\end{align*}
 where $s_{ij} = \sin \theta_{ij}$ and $c_{ij} = \cos \theta_{ij}$ and $\theta_{ij}$ are neutrino mixing angles and $\delta$ is CP-violating phase.
 
 \section{Lepton flavor violation}
@@ -404,8 +417,25 @@ where $t_{\alpha} = M^{2}_{\psi_{\alpha}}/M^{2}_{\eta^{-}}$ and
 %
 If we assume that $t_{\alpha} \to 0$, $t_{\alpha} \to 1$ and $t_{\alpha} \to \infty$, we have that $K(t_{\alpha}) = 1/12$, $K(t_{\alpha}) = 1/24$ and $K(t_{\alpha}) = 1/(6t)$, respectively.
 
-For $i \neq j$ we have CLFV processes, these processes are severely restricted by the current bounds , which set limits to the Yukawas. The most restrictive experimental bounds is decay $\mu \to e \gamma$, which is several orders of magnitude greater than radiative decays $\tau \to~l\gamma$, with $l = e, \mu$. These restrictions are given by Br$(\mu \to e\gamma)$ \textless $5.3 \times 10^{-13} $~\cite{Adam:2013mnn}, Br$(\tau \to e\gamma) $\textless$ 3.3 \times 10^{-8}$ and Br$(\tau \to~\mu\gamma) $\textless$ 4.4 \times 10^{-8}$~\cite{Aubert:2009ag, Bona:2007qt, Miyazaki:2012mx}. 
+For $i \neq j$ we have CLFV processes, these processes are severely restricted by the current bounds , which set limits to the Yukawas. The most restrictive experimental bounds is decay $\mu \to e \gamma$, which is several orders of magnitude greater than radiative decays $\tau \to~l\gamma$, with $l = e, \mu$. These restrictions are given by Br$(\mu \to e\gamma)$ \textless $5.7 \times 10^{-13} $~\cite{Adam:2013mnn}, Br$(\tau \to e\gamma) $\textless$ 3.3 \times 10^{-8}$ and Br$(\tau \to~\mu\gamma) $\textless$ 4.4 \times 10^{-8}$~\cite{Aubert:2009ag, Bona:2007qt, Miyazaki:2012mx}. 
 
+In the limit $m_{\eta^{\pm}}^{2} \gg M_{\psi_{a}}^{2}$, $t_{\alpha} \to 0$ the decay width reads
+%
+\begin{align}
+ \Gamma(l^{-}_{i} \to l^{-}_{j} \gamma) = \frac{m^{3}_{i}}{16 \pi} \left| \sum_{\alpha} h^{\alpha}_{i} m_{i} h^{\alpha}_{j} \frac{i e}{16 \pi M^{2}_{\eta^{-}}} \left[ \frac{1}{12} \right] \right|^{2}\,, 
+\end{align}
+%
+using the current experimental constraint, can be fullfilled provided
+%
+\begin{align*}
+    \left( \sum_{\alpha} \frac{h^{}_{i \alpha} h_{\alpha j}^{*}}{M^{2}_{\eta^{-}}} \right)^{2} \leq 5.7 \times 10^{-13} \frac{768 \pi G_{F}^{2}}{\alpha_{EM}}
+\end{align*}
+%
+which leads to a very slight requirement,
+\begin{align*}
+    \left| \sum_{\alpha}h^{}_{i \alpha} h_{\alpha j}^{*}\left(\frac{50\text{TeV}}{M^{2}_{\eta^{-}}} \right)^{2} \right| \leq 12.65
+\end{align*}
+%
 For $i = j$ we have processes that contribute to the leptonic magnetic dipole moment. In the case of the anomalous muon magnetic dipole moment, the experimental measurements does not agree with the values predicted by the SM~\cite{Lindner:2016bgg}. This can be a proof of the veracity of the model, in addition to giving restrictions on the Yukawas.
 
 \section{Dark matter}
