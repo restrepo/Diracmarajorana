@@ -227,13 +227,15 @@ The $\operatorname{U}(1)_X$ charges for the new particles are defined by the ano
 
 The most general Lagrangian contains the following Yukawa and scalar interactions:
 %
-\begin{align*}
+\begin{align}
 \label{eq:LagY}
-    \mathcal{L} \supset& -[ 
-    h_{i\alpha} \overline{L_{i}} \tilde{\eta} \psi_{R\alpha} +  y_{j\alpha} \overline{\nu_{R_{j}}} \sigma^* \psi^c_{R\alpha} + \kappa_{\alpha\beta} \overline{\psi^{c}_{R\alpha}} \psi_{R\beta} S^* + \text{h.c.}] - \mathcal{V}(H, S, \eta, \sigma)\,,
-\end{align*}
+    \mathcal{L} \supset& -\,g_{X}\,Z_\mu^\prime\sum_{F}q_{F}\overline{F} \gamma^\mu F+\sum_{\phi}\left|\left( \partial_\mu +i\,g_{X}\,q_\phi\,Z'_\mu \right) \phi\right|^2\nonumber\\
+    &-[ 
+    h_{i\alpha} \overline{L_{i}} \tilde{\eta} \psi_{R\alpha} +  y_{j\alpha} \overline{\nu_{R_{j}}} \sigma^* \psi^c_{R\alpha} + \kappa_{\alpha\beta} \overline{\psi^{c}_{R\alpha}} \psi_{R\beta} S^* + \text{h.c.}] - \mathcal{V}(H, S, \eta, \sigma)\,.
+\end{align}
 %
-where $L_{i}$ ($i=1,2,3$) and $H$ are the SM lepton and Higgs doublets, respectively,  $\widetilde{\eta} = i \sigma_2 \eta^*$, and $h$, $y$ and $\kappa$ are matrices in the flavor space. 
+In the first row $g_{X}$ is the gauge coupling associated to the $\operatorname{U}(1)_X$ group and $Z_\mu^\prime$ is its corresponding gauge boson, $F$ and $\phi$ denote the new chiral fermions and new scalars respectively, and $q_{F,\,\phi}$ their $X$ charges. In the second row
+$L_{i}$ ($i=1,2,3$) and $H$ are the SM lepton and Higgs doublets, respectively,  $\widetilde{\eta} = i \sigma_2 \eta^*$, and $h$, $y$ and $\kappa$ are matrices in the flavor space. 
 The scalar potential can be cast as
 %
 \begin{align*}
@@ -314,7 +316,7 @@ On the other hand, we assume that the heavy Majorana fermions are already in the
 %
 \begin{figure}
 \centering
-\includegraphics[scale=0.75]{Neutrino_Loop.pdf}
+\includegraphics[scale=0.6]{Neutrino_Loop.pdf}
 \caption{One-loop realization of the dimension-6 operator $\overline{L} \tilde{H} \nu_R S^2$ leading to Dirac neutrino masses with Majorana mediators.}
 \label{fig:zee}
 \end{figure}
@@ -402,14 +404,7 @@ of either $v_S$, $\lambda_8$ or $h_{i \alpha} y_{j\alpha}$.
 
 %\section{Lepton flavor violation}
 %\label{sec:LFV}
-%
-\begin{figure}
-\centering
-\includegraphics[scale=0.75]{LFV.pdf}
-\caption{Feynman diagram for the processes $\ell_{i} \to \ell_{j} \gamma$}
-\label{fig:LFV}
-\end{figure}
-%
+
 On the other hand, the $h_{i\alpha}$ Yukawa interaction in Eq.~\eqref{eq:LagY} leads to charged lepton flavor violation (CLFV) processes induced at one-loop level and mediated by the charged scalars $\eta^{\pm}$) as the ones shown in Fig.~\ref{fig:LFV} for the $\ell_i\to\ell_j\gamma$ type. 
 current experimental constraint on Br$(\mu \to e\gamma)$ \textless $5.7 \times 10^{-13} $~\cite{Adam:2013mnn} and for the case $m_\chi^2=m_{\eta^{\pm}}^{2} \gg M_{\psi_{a}}^{2}$
  we obtain an upper bound for the Yukawa couplings product (for a given $m_\chi$)
@@ -417,6 +412,17 @@ current experimental constraint on Br$(\mu \to e\gamma)$ \textless $5.7 \times 1
     \left| \sum_{\alpha}h_{i \alpha} h_{j\alpha}^{*} \right| \lesssim 0.02 \left(\frac{m_\chi}{2\,\text{TeV}} \right)^{2}.
 \end{align}
 It is worth noticing that $y_{j\alpha}$ is not constrained by the non observation of LFV processes. 
+
+%
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.6]{LFV.pdf}
+\caption{Feynman diagram for the processes $\ell_{i} \to \ell_{j} \gamma$}
+\label{fig:LFV}
+\end{figure}
+%
+
+
 %
 %which leads to a very slight requirement,
 
@@ -471,8 +477,8 @@ Since $\psi_{1}$ is a singlet under the SM gauge group its thermal relic density
 The scenario where $\psi_{1}$ self-annihilates dominantly through $h_{i\alpha}$-mediated interactions resembles the very well known scotogenic model \cite{Ma:2006km},  
 where sizable $h_{i\alpha}$ are required to reproduce the correct DM abundance, which in turn leads to a mild tension with experimental upper bounds on the rates for rare charged lepton decays~\cite{Kubo:2006yx,Sierra:2008wj,Ibarra:2016dlb}. 
 %The phenomenology of this scenario has been extensively studied  \cite{Kubo:2006yx,Sierra:2008wj,Suematsu:2009ww,Gelmini:2009xd,Hambye:2009pw,Aoki:2010tf,Schmidt:2012yg,Ma:2012if,Kashiwase:2012xd,Kashiwase:2013uy,Racker:2013lua,Toma:2013zsa,Molinaro:2014lfa,Vicente:2014wga,Merle:2015gea,Merle:2015ica,Merle:2016scw,Hagedorn:2016dze,Lindner:2016kqk,Hessler:2016kwm,Ibarra:2016dlb}.
-On the other hand, when the $Z'$ portal \cite{Langacker:2008yv,Dudas:2009uq} is the main gate to visible sector, $\psi_1$ largely annihilates into neutrinos in such a way the observed DM abundance can be reproduced without entering in conflict with the DM searches, which follows from the fact that the $Z'$ does not couples to quarks neither to charged leptons)
-(see~\cite{Dudas:2009uq,Arcadi:2013qia,Alves:2013tqa,Alves:2015pea,Alves:2016cqf,Blanco:2019hah} for related phenomenological studies on $Z'$-mediated Majorana DM). 
+On the other hand, when the $Z'$ portal \cite{Langacker:2008yv,Arcadi:2013qia} is the main gate to visible sector, $\psi_1$ largely annihilates into neutrinos in such a way the observed DM abundance can be reproduced without entering in conflict with the DM searches, which follows from the fact that the $Z'$ does not couples to quarks neither to charged leptons)
+(see~\cite{Arcadi:2013qia,Alves:2013tqa,Alves:2015pea,Alves:2016cqf,Blanco:2019hah} for phenomenological studies on $Z'$-mediated Majorana DM). 
 % check Ibarra papers
 %also through the annihilation
 %$\psi_{1} \psi_{1} \to l _{\alpha}^+ \overline{l}_{\beta}^- $, via 
@@ -492,7 +498,7 @@ On the other hand, when the $Z'$ portal \cite{Langacker:2008yv,Dudas:2009uq} is 
 % $\psi \to l^{\pm} l^{\mp} \psi_{1,2} $, through $\eta^{\pm}$.
 
 %\subsection{Scalar dark matter}
-In contrast to fermion DM, the scalar DM candidate has additional interaction terms to the Yukawa and gauge interactions. This entails that the later ones can be used to alter the relic density predictions in scenarios with mixed scalar DM. Since in the present model the CP-even and CP-odd neutral $Z_2$-odd particles are mass degenerate, we have the scenario of singlet-doublet complex DM~\cite{Kadastik:2009dj,Belanger:2012vp} where the DM candidate is a mixture of a complex singlet \cite{McDonald:1993ex} and a $SU(2)_L$ doublet \cite{Deshpande:1977rw,Barbieri:2006dq}. It follows that for negligible Yukawa and gauge interactions there are two DM mass regions that allow us to properly reproduce the relic abundance, one corresponds the Higgs funnel region and the second one lies above $100$ GeV~\cite{Kakizaki:2016dza}. 
+In contrast to fermion DM, the scalar DM candidate has additional interaction terms to the Yukawa and gauge interactions. This entails that the later ones can be used to alter the relic density predictions in scenarios with mixed scalar DM. Since in the present model the CP-even and CP-odd neutral $Z_2$-odd particles are mass degenerate, we have the scenario of singlet-doublet complex DM~\cite{Kadastik:2009dj,Belanger:2012vp} where the DM candidate is a mixture of a complex singlet \cite{McDonald:1993ex} and a $SU(2)_L$ doublet \cite{Deshpande:1977rw,Barbieri:2006dq}. It follows that for negligible Yukawa and gauge interactions there are two DM mass regions that allow us to properly reproduce the relic abundance, one corresponds the Higgs funnel region and the second one demands masses above $100$ GeV~\cite{Kakizaki:2016dza}. 
 
 %This corresponds to the simplified dark matter model of scalar singlet-doublet dark matter, which have been studied in detail in~\cite{Restrepo:2019soi} 
 
@@ -518,7 +524,7 @@ In contrast to fermion DM, the scalar DM candidate has additional interaction te
 %phenomena such as inflation~\cite{Lerner:2009xg} and
 %baryogenesis~\cite{Cline:2012hg}.
 
-\section{Cosmological constraints}
+\section{Beyond the minimal model: cosmological constraints}
 \label{sec:CosmoConstraints}
 A not-so-minimal model can be obtained by introducing additional chiral SM singlet fields. 
 In this case we can use the solutions to the anomaly cancellation conditions found for an Abelian gauge symmetry $\operatorname{U(1)_X}$ in~\cite{Jenkins:1987ue,Appelquist:2002mw,Campos:2017dgc,Okada:2018tgy,Jana:2019mez}.
