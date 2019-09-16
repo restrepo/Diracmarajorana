@@ -65,7 +65,7 @@ Third Author\footnote{\href{mailto:third@author }{third@author}}\\
 
 \begin{abstract}    
 We propose a model for one-loop Dirac neutrino masses with Majorana mediators which can be dark matter candidates if they are the lightest states circulating the loop. This model is restricted by  neutrino physics,  lepton flavor violation and cosmological constrains, including  
-the effective number light neutrinos $N_{\text{eff}}$. Here we find that $M_{Z^{\prime}}/g^{\prime} \gtrsim 60\ \text{TeV}$ in order to satisfy the conditions of $N_{\text{eff}}$..
+the effective number light neutrinos $N_{\text{eff}}$. Here we find that $M_{Z^{\prime}}/g_D \gtrsim 60\ \text{TeV}$ in order to satisfy the conditions of $N_{\text{eff}}$..
 \end{abstract}
 
 \section{Introduction}
@@ -236,12 +236,12 @@ The most general Lagrangian for some gauge $\operatorname{U}(1)_X$ symmetry, whi
 %
 \begin{align}
 \label{eq:LagY}
-    \mathcal{L} \supset& -\,g'\,Z_\mu^\prime\sum_{F}q_{F}\overline{F} \gamma^\mu F+\sum_{\phi}\left|\left( \partial_\mu +i\,g'\,q_\phi\,Z'_\mu \right) \phi\right|^2\nonumber\\
+    \mathcal{L} \supset& -\,g_X\,Z_\mu^\prime\sum_{F}q_{F}\overline{F} \gamma^\mu F+\sum_{\phi}\left|\left( \partial_\mu +i\,g_X\,q_\phi\,Z'_\mu \right) \phi\right|^2\nonumber\\
     &-[ 
     h_{i\alpha} \overline{L_{i}} \tilde{\eta} \psi_{R\alpha} +  y_{j\alpha} \overline{\nu_{R_{j}}} \sigma^* \psi^c_{R\alpha} + \kappa_{\alpha\beta} \overline{\psi^{c}_{R\alpha}} \psi_{R\beta} S^* + \text{h.c.}] - \mathcal{V}(H, S, \eta, \sigma)\,.
 \end{align}
 %
-In the first row $g'$ is the gauge coupling associated to the $\operatorname{U}(1)_X$ group and $Z_\mu^\prime$ is its corresponding gauge boson, $F$ ($\phi$) denote the new fermions (scalars), and $q_{F,\,\phi}$ their $X$ charges. In the second row
+In the first row $g_X$ is the gauge coupling associated to the $\operatorname{U}(1)_X$ group and $Z_\mu^\prime$ is its corresponding gauge boson, $F$ ($\phi$) denote the new fermions (scalars), and $q_{F,\,\phi}$ their $X$ charges. In the second row
 $L_{i}$ ($i=1,2,3$) and $H$ are the SM lepton and Higgs doublets, respectively,  $\widetilde{\eta} = i \sigma_2 \eta^*$, and $h$, $y$ and $\kappa$ are matrices in the flavor space. 
 The scalar potential can be cast as
 %
@@ -311,7 +311,7 @@ where $\tan\theta= 2c/(b-a)$, with $a = m^{2}_{\eta^{\pm}} + \frac{1}{2}\lambda_
 %     m_{\chi_{I(1,2)}}^{2} &= \frac{1}{2} \left(a + b \mp \sqrt{(a-b)^{2} - 4c^{2}} \right)\,,
 %\end{align*}
 
-On the other hand, we assume that the heavy Majorana fermions are already in the diagonal basis in such a way their masses are $M_{\psi_\alpha}=\kappa_{\alpha}v_S=\sqrt{2}\kappa_{\alpha\alpha}v_S$, with $M_{\psi_1}<M_{\psi_2}<M_{\psi_3}$. Finally, the mass of the new gauge boson is given by $M_{Z'}=q_Sg'v_S$.
+On the other hand, we assume that the heavy Majorana fermions are already in the diagonal basis in such a way their masses are $M_{\psi_\alpha}=\kappa_{\alpha\alpha}v_S/\sqrt{2}$, with $M_{\psi_1}<M_{\psi_2}<M_{\psi_3}$. Finally, the mass of the new gauge boson is given by $M_{Z'}=q_Sg_X v_S$.
 %\begin{pmatrix}
   %\psi_1 &
   %\psi_2 &
@@ -332,12 +332,12 @@ On the other hand, we assume that the heavy Majorana fermions are already in the
 Neutrino masses are generated at one-loop level according to the diagram in  Fig.~\ref{fig:zee}. The expression for the effective neutrino mass matrix $\mathcal{M}_{\nu}$ can be cast as
 %
 \begin{align}
-(\mathcal{M}_{\nu})_{ij} = \frac{1}{64 \pi^{2}}  \frac{\lambda_8 v_S^2 v_H} {m_{\chi_{R_2}}^{2}-m_{\chi_{R_1}}^{2}}\sum_{\alpha=1}^{3} h_{i \alpha} \kappa_\alpha y^{*}_{j\alpha}\left[ F\left( \frac{m_{\chi_{R_2}}^{2}}{M_{\psi_{\alpha}}^{2}} \right) - F\left( \frac{m_{\chi_{R_1}}^{2}}{M_{\psi_{\alpha}}^{2}} \right) \right] + (R \to I)\,,
+(\mathcal{M}_{\nu})_{ij} = \frac{1}{32 \pi^{2}}  \frac{\lambda_8 v_S v_H} {m_{\chi_{R_2}}^{2}-m_{\chi_{R_1}}^{2}}\sum_{\alpha=1}^{3} h_{i \alpha} M_{\psi_\alpha} y^{*}_{j\alpha}\left[ F\left( \frac{m_{\chi_{R_2}}^{2}}{M_{\psi_{\alpha}}^{2}} \right) - F\left( \frac{m_{\chi_{R_1}}^{2}}{M_{\psi_{\alpha}}^{2}} \right) \right] + (R \to I)\,,
 %(\mathcal{M}_{\nu})_{ij} = \frac{1}{64 \pi^{2}}  \frac{\lambda_8 v_S v_H} %{m_{\chi_{R_2}}^{2}-m_{\chi_{R_1}}^{2}}\sum_{\alpha=1}^{3} h_{i \alpha} %M_{\psi_{\alpha}}y^{*}_{j\alpha}\left[ F\left( %\frac{m_{\chi_{R_2}}^{2}}{M_{\psi_{\alpha}}^{2}} \right) - F\left( %\frac{m_{\chi_{R_1}}^{2}}{M_{\psi_{\alpha}}^{2}} \right) \right] + (R \to I)\,,
 \end{align}
 %
 %check the following formula:
-where $F(x) =x \log x/(x-1)$ and $M_{\psi_\alpha}=\kappa_{\alpha}v_S$ has been used once. 
+where $F(x) =x \log x/(x-1)$. 
 %, $M_{\psi_{a}}$ is
 %the fermion mass and $\chi_{R_{(1,2)}}$ ( $\chi_{I_{(1,2)}}$ ) are the
 %two CP-even (CP-odd) mass eigenstates.
@@ -357,14 +357,14 @@ In order to estimate the possible values for the parameters involved in the neut
 Taking into account that for the mentioned case $m^2_{\chi_{R_{2}}}-m^2_{\chi_{R_{1}}} = \lambda_8 v v_{S}$ and $m^2_{\chi_{R_{2}}}+m^2_{\chi_{R_{1}}} = 2 m^2_\chi$, we have that
 %
 \begin{align*}
-(\mathcal{M}_{\nu})_{ij} = \frac{\lambda_8 v_S^2 v}{32 \pi^{2}} \sum_{\alpha=1}^{3} \frac{h_{i \alpha} \kappa_\alpha y^{*}_{j\alpha}} {m_\chi^{2}-M_{\psi_{\alpha}}^{2}} \left[1 - \frac{M_{\psi_{\alpha}}^{2}}{m_\chi^{2}-M_{\psi_{\alpha}}^{2}} \log \left( \frac{m_{\chi}^{2}}{M_{\psi_{\alpha}}^{2}} \right)\right]\,,
+(\mathcal{M}_{\nu})_{ij} = \frac{\lambda_8 v_S v}{16 \pi^{2}} \sum_{\alpha=1}^{3} \frac{h_{i \alpha} M_{\psi_{\alpha}} y^{*}_{j\alpha}} {m_\chi^{2}-M_{\psi_{\alpha}}^{2}} \left[1 - \frac{M_{\psi_{\alpha}}^{2}}{m_\chi^{2}-M_{\psi_{\alpha}}^{2}} \log \left( \frac{m_{\chi}^{2}}{M_{\psi_{\alpha}}^{2}} \right)\right]\,,
 \end{align*}
 %
 and by furhter assuming $m_{\chi}^{2} \gg (\kappa_\alpha v_S)^2$ one finds 
 %
 \begin{align}
-(\mathcal{M}_{\nu})_{ij} & = \frac{\lambda_8 v_S^2 v}{32 \pi^{2}m_{\chi}^{2}} \sum_{\alpha=1}^{3} h_{i \alpha} \kappa_{\alpha}y^{*}_{j\alpha}\,, \\
-& \sim 0.04~\text{eV} \left( \frac{\lambda_8}{10^{-4}}\right) \left( \frac{v_{S}}{200\,  \text{GeV}}\right)^2 \left( \frac{\kappa_\alpha}{0.5}\right) \left( \frac{2\, \text{TeV}}{m_{\chi}}\right)^{2} \left( \frac{h_{i \alpha} y_{j\alpha}}{10^{-4}}\right)\,. \nonumber
+(\mathcal{M}_{\nu})_{ij} & = \frac{\lambda_8 v_S v}{16 \pi^{2}m_{\chi}^{2}} \sum_{\alpha=1}^{3} h_{i \alpha} M_{\psi_\alpha}y^{*}_{j\alpha}\,, \\
+& \sim 0.04~\text{eV} \left( \frac{\lambda_8}{10^{-4}}\right) \left( \frac{v_{S}}{200\,  \text{GeV}}\right) \left( \frac{M_{\psi_\alpha}}{50\,\text{GeV}}\right) \left( \frac{2\, \text{TeV}}{m_{\chi}}\right)^{2} \left( \frac{h_{i \alpha} y_{j\alpha}}{10^{-4}}\right)\,. \nonumber
 \end{align}
 %
 In this way, in addition to the loop suppression it is possible to 
@@ -549,13 +549,13 @@ It turns that the $Z'$ portal also allows to probe the model through modificatio
 
 With the aim of thermalize the right-handed neutrinos we consider an extension of the previous setup by introducing additional chiral SM singlet fields and assigning nonzero $\operatorname{U}(1)_X$ charges to the SM fields. 
 %A not-so-minimal model can be obtained by introducing additional chiral SM singlet fields. 
-In this case we can use the solutions to the anomaly cancellation conditions found for an Abelian gauge symmetry $\operatorname{U(1)}_X$ in Refs.~\cite{Jenkins:1987ue,Appelquist:2002mw,Campos:2017dgc,Okada:2018tgy,Jana:2019mez}, where the previous dark symmetry corresponds to the fermiophobic setup  $X=N$~\cite{Campos:2017dgc,Bertuzzo:2018itn,Bertuzzo:2018ftf}.
+In this case we can use the solutions to the anomaly cancellation conditions found for a general  Abelian gauge symmetry $\operatorname{U(1)}_X$ with generation-independent charge assignments in Refs.~\cite{Jenkins:1987ue,Appelquist:2002mw,Campos:2017dgc,1504.06291,Okada:2018tgy,Jana:2019mez}, where the previous dark symmetry denoted as $X=\mathcal{D}$ corresponds to the fermiophobic setup~\cite{Campos:2017dgc,Bertuzzo:2018itn,Bertuzzo:2018ftf}.
 
 Since we are interested here in keeping the exotic set of $X$-charges
 charges $\{\mp 4$,~$\mp 4$,~$\pm 5\}$ in such a way that when assigned to the right-handed neutrinos the tree level Dirac and
 Majorana masses can be forbidden~\cite{Calle:2018ovc}, 
 it follows that this set is compatible with the
-Abelian gauge groups $X=B-L,R,D,G,$ defined in Ref.~\cite{Campos:2017dgc}\footnote{We change $\operatorname{U}(1)_B$ for the more suitable name of $\operatorname{U}(1)_R$~\cite{Jana:2019mez}} as long as the set of Majorana mediators $\psi_{R\alpha}$ that  realize the
+Abelian gauge groups $X=B-L,R,D,G,$ defined in Ref.~\cite{Campos:2017dgc}\footnote{We change $\operatorname{U}(1)_B$ for the more suitable name of $\operatorname{U}(1)_R$~\cite{Jana:2019mez}.} as long as the set of Majorana mediators $\psi_{R\alpha}$ that  realize the
 dimension-6 operator at one-loop have vanishing $X$-charges. Otherwise, the anomaly cancellation conditions would be spoiled.
 In view of that $\psi_{R\alpha}$ have necessarily nonzero $X$-charges (see the Appendix), we further add an extra set of chiral fermions in 
 such a way the full set heavy fermions  do not affect
@@ -564,7 +564,7 @@ The resulting charge assignment is displayed in
 Table~\ref{tab:partcont3}, where 
 the fields $\xi_{L \alpha}$ constitute the new set of chiral fermion that guarantee the anomaly cancellation.
 %\footnote{Their Majorana masses are obtained in the same way than the ones for $\psi_{R\alpha}$.}.
-In this way we end up with a model with four Majorana fermions, two more than in the minimal solution, since third generation of chiral fermions is not needed to cancel the $\operatorname{U(1)}_X$ anomaly (alternatively we may consider another simple setup by adding a single set of $\psi_R$ and $\xi_L$ and two set of scalars $\eta_\alpha$, $\sigma_{\alpha}$~\cite{Reig:2018mdk})\footnote{
+In this way we end up with a model with four Majorana fermions, two more than in the minimal solution, since third generation of chiral fermions is not needed to cancel the $\operatorname{U(1)}_X$ anomalies (alternatively we may consider another simple setup by adding a single set of $\psi_R$ and $\xi_L$ and two set of scalars $\eta_\alpha$, $\sigma_{\alpha}$~\cite{Reig:2018mdk})\footnote{
 %On the other hand, 
 Seeing that the two additional left-handed fields $\xi_{L\alpha}$,  with a $X$-charge $r=3/4$,  have both Dirac and Majorana mass terms $\overline{\xi_{L \alpha}}\psi_{R \beta}$ and $ \overline{\xi_{L\alpha}^c }\xi_{L \beta} \langle S\rangle$, the full set of Majorana fields are massive and heavy. 
 Moreover, because the $\operatorname{U}(1)_{X}$ left out a remnant $Z_2$ discrete symmetry which guarantees the stability of the lightest $Z_2$-odd particle,  we have that the lightest of these Majorana fields may play the role of DM candidate.}.
@@ -582,24 +582,24 @@ Moreover, because the $\operatorname{U}(1)_{X}$ left out a remnant $Z_2$ discret
 %
 \begin{table}
   \centering
-  \begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \begin{tabular}{|c|c|c|c|c|c|c|c||c|}
     \hline  
-    Fields     & $\operatorname{SU}(2)_L$ &  $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$\\ \hline
-$L $     & $\boldsymbol{2}$ & $-1/2$ & $l$      &  $-1$&    $0$ &  $-3/2$&  $-1/2$ \\    
-$d_R $   & $\boldsymbol{1}$ & $-1/2$ & $1+2l/3$ &  $1/3$&    $1$&  $0$&  $2/3$ \\
-$u_R $   & $\boldsymbol{1}$ & $+2/3$ & $-1-4l/3$&  $1/3$&   $-1$&  $1$&  $-1/3$ \\
-$Q $     & $\boldsymbol{2}$ & $-1/6$ & $-l/3$   & $1/3$&    $0$&  $1/2$&  $1/6$ \\
-$e_R $   & $\boldsymbol{1}$ & $-1$   & $1+2l$   &  $-1$&    $1$ &  $-2$&  $0$ \\\hline
-$H $     & $\boldsymbol{2}$ & $1/2$  & $-1-l$   &  $0$&    $-1$ &  $1/2$&  $-1/2$ \\
-$\eta$   & $\boldsymbol{2}$ & $+1/2$ & $3/4-l$  & $7/4$& $3/4$ &$9/4$&$5/4$ \\
-$S$      & $\boldsymbol{1}$ & $0$    & $3/2$    & $3/2$&  $3/2$ & $3/2$& $3/2$ \\
-$\sigma$ & $\boldsymbol{1}$ & $0$    & $13/4$   & $13/4$&  $13/4$ & $13/4$& $13/4$ \\\hline
-$\nu_{Ri}$& $\boldsymbol{1}$ & $0$   & $-4$& $-4$&  $-4$ & $-4$& $-4$\\
-$\nu_{R3}$& $\boldsymbol{1}$ & $0$   & $+5$& $+5$&  $5$ & $5$& $5$\\
-$\psi_{R\alpha}$  & $\boldsymbol{1}$ & $0$& $3/4$ & $3/4$&  $3/4$ & $3/4$& $3/4$ \\\hline
-$\xi_{L\alpha}$   & $\boldsymbol{1}$ & $0$ & $3/4$& $3/4$ &  $3/4$ & $3/4$& $3/4$\\\hline
+    Fields     & $\operatorname{SU}(2)_L$ &  $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$ & $\operatorname{U}(1)_{\mathcal{D}}$\\ \hline
+$L $     & $\boldsymbol{2}$ & $-1/2$ & $l$      &  $-1$&    $0$ &  $-3/2$&  $-1/2$ & $0$ \\    
+$d_R $   & $\boldsymbol{1}$ & $-1/2$ & $1+2l/3$ &  $1/3$&    $1$&  $0$&    $2/3$ & $0$\\
+$u_R $   & $\boldsymbol{1}$ & $+2/3$ & $-1-4l/3$&  $1/3$&   $-1$&  $1$&   $-1/3$ & $0$ \\
+$Q $     & $\boldsymbol{2}$ & $-1/6$ & $-l/3$   & $1/3$&    $0$&  $1/2$&  $1/6$ & $0$ \\
+$e_R $   & $\boldsymbol{1}$ & $-1$   & $1+2l$   &  $-1$&    $1$ &  $-2$&  $0$ & $0$\\\hline
+$H $     & $\boldsymbol{2}$ & $1/2$  & $-1-l$   &  $0$&    $-1$ &  $1/2$&  $-1/2$ & $0$ \\
+$\eta$   & $\boldsymbol{2}$ & $+1/2$ & $3/4-l$  & $7/4$& $3/4$ &$9/4$&$5/4$ & $0$ \\
+$S$      & $\boldsymbol{1}$ & $0$    & $3/2$    & $3/2$&  $3/2$ & $3/2$& $3/2$ & $0$\\
+$\sigma$ & $\boldsymbol{1}$ & $0$    & $13/4$   & $13/4$&  $13/4$ & $13/4$& $13/4$ & $0$\\\hline
+$\nu_{Ri}$& $\boldsymbol{1}$ & $0$   & $-4$& $-4$&  $-4$ & $-4$& $-4$ & $-4$\\
+$\nu_{R3}$& $\boldsymbol{1}$ & $0$   & $+5$& $+5$&  $5$ & $5$& $5$ & $5$\\
+$\psi_{R\alpha}$  & $\boldsymbol{1}$ & $0$& $3/4$ & $3/4$&  $3/4$ & $3/4$& $3/4$ & $1$ \\\hline
+$\xi_{L\alpha}$   & $\boldsymbol{1}$ & $0$ & $3/4$& $3/4$ &  $3/4$ & $3/4$& $3/4$ &$-$\\\hline
   \end{tabular}
-  \caption{The new scalars and fermions with their respective charges for the 6-dimensional operator. The SM fields have the usual $U(1)_{B-L}$ assignment. Now $\alpha=1,2$}
+  \caption{The new scalars and fermions with their respective charges for the 6-dimensional operator. The SM fields have the usual $U(1)_{B-L}$ assignment. Now $\alpha=1,2$. The solution in Table~\ref{tab:partcont} is presented in the last column.}
     \label{tab:partcont3}
 \end{table}
 %
@@ -609,7 +609,7 @@ $\xi_{L\alpha}$   & $\boldsymbol{1}$ & $0$ & $3/4$& $3/4$ &  $3/4$ & $3/4$& $3/4
 % \footnote{Check 2r+2nu: -2,6,7,-9,-3  3r+2nu: -(5/2),7/2,-7,6,9/2}
 
 Accordingly, we may expect that 
-the three right neutrinos within the not-so minimal model
+the three right-handed neutrinos within the not-so minimal model
 contribute to the radiation energy density of the Universe, since now   the interaction between the $Z'$ with the SM fermions  opens up the possibility to thermalize them with the primordial plasma.   
 %These new contributions can modify the cosmological observables in the cosmic microwave background (CMB). 
 %These new neutrinos contribute to the
@@ -623,7 +623,7 @@ In other words, this leads to a modification in the relativistic degrees of free
     \Delta N_{\text{eff}} = N_{\text{eff}} - N^{\text{SM}}_{\text{eff}} = N_{\nu_R} \left( \frac{T_{\nu_{R}}}{T_{\nu_{L}}} \right)^{4} = N_{\nu_R} \left( \frac{g(T^{\nu_{L}}_{\text{dec}})}{g(T^{\nu_{R}}_{\text{dec}})} \right)^{4}
 \end{align*}
 %
-where $N_{\nu_R}$ is the neutrino number with same charges and $g(T)$ is the number of relativistic degrees of freedom at a temperature $T$ in the SM~\cite{Aghanim:2018eyx}. The decoupling temperature of the SM neutrinos is $ T^{\nu_{L}}_{\text{dec}} \approx 2.3 $ MeV, when $g(T^{\nu_{L}}_{ \text{dec}}) = 43/4$ corresponding to the three $\nu_{L}$, $e^{\pm} $ and the photon~\cite{Kolb:1990vq,Enqvist:1991gx}. The rate of interaction of the right neutrinos with the SM is mediated by the gauge boson $Z^{\prime} $ and is given by~\cite{SolagurenBeascoa:2012cz}
+where $N_{\nu_R}$ is the neutrino number with same charges and $g(T)$ is the number of relativistic degrees of freedom at a temperature $T$ in the SM~\cite{Aghanim:2018eyx}. The decoupling temperature of the SM neutrinos is $ T^{\nu_{L}}_{\text{dec}} \approx 2.3 $ MeV, when $g(T^{\nu_{L}}_{ \text{dec}}) = 43/4$ corresponding to the three $\nu_{L}$, $e^{\pm} $ and the photon~\cite{Kolb:1990vq,Enqvist:1991gx}. The rate of interaction of the right-handed neutrinos with the SM is mediated by the gauge boson $Z^{\prime} $ and is given by~\cite{SolagurenBeascoa:2012cz}
 %
 \begin{align*}
     \Gamma_{\nu_R} (T) &= n_{\nu_R}(T) \langle \sigma(\overline{\nu_{R}} \nu_{R} \to \overline{f} f) \upsilon \rangle \,, \\
@@ -637,7 +637,7 @@ n_{\nu_R}(T) = g_{\nu_R} \int \frac{d^{3} k}{(2 \pi)^{3}} f_{\nu_R}(k)\,.
 The cross section for the case of a heavy mediator ($T^{\nu_R}_{\text{dec}} \ll M_{Z^{\prime}}$), with $s \ll M_{Z^{\prime}}$ and neglecting the fermion masses in the final state is given by~\cite{Barger:2003zh}
 %
 \begin{align*}
-    \sigma_{f}(s) \approx N^{C}_{f} \frac{s}{12 \pi} \left( \frac{g^{\prime}}{M_{Z^{\prime}}} \right)^{4} q^{2}_{\nu_R} (q^{2}_{f_L} + q^{2}_{f_R})\,,
+    \sigma_{f}(s) \approx N^{C}_{f} \frac{s}{12 \pi} \left( \frac{g_X}{M_{Z^{\prime}}} \right)^{4} q^{2}_{\nu_R} (q^{2}_{f_L} + q^{2}_{f_R})\,,
 \end{align*}
 %
 where $N^{C}_{f}=1(3)$ for leptons (quarks),
@@ -645,10 +645,10 @@ where $N^{C}_{f}=1(3)$ for leptons (quarks),
 and $q_{f}$ is the $X$-charge of the SM fermion.  
 %under the new symmetry, $g^{\prime}$ and $M_{Z^{\prime}}$ are the gauge coupling and mass for the new gauge boson. 
 %Solving the integrals with this last cross section we obtain that the interaction rate is given by
-Accordingly the interaction rate takes the form
+Accordingly, the interaction rate takes the form
 %
 \begin{align*}
-    \Gamma_{\nu_{R}}(T) = \frac{49 \pi^{5} T^{5}}{97200 \zeta(3)} \left( \frac{g^{\prime}}{M_{Z^{\prime}}} \right)^{4} \sum_{f} N^{C}_{f} q^{2}_{f}\,.
+    \Gamma_{\nu_{R}}(T) = \frac{49 \pi^{5} T^{5}}{97200 \zeta(3)} \left( \frac{g_X}{M_{Z^{\prime}}} \right)^{4} \sum_{f} N^{C}_{f} q^{2}_{f}\,.
 \end{align*}
 %
 In this expression the sum is performed over all SM fermions that are in thermal equilibrium with the plasma at temperature $T$. To estimate the contribution to the relativistic degrees of freedom from right-handed neutrinos, it is necessary to calculate the decoupling temperature of the right-handed neutrinos ($T^{\nu_R}_{\text{dec}}$). The latter occurs when the interaction rate $\Gamma_{\nu_{R}}(T)$ drops below the rate of expansion of the Universe, $\Gamma(T^{\nu_R}_{\text{dec}}) = H(T^{\nu_R}_{\text{dec}})\,, $
@@ -678,8 +678,8 @@ On the other hand, it is remarkable the fact the future CMB experiments~\cite{Be
 %
 \begin{figure}
 \centering
-\includegraphics[scale=1.2]{D_Neff.pdf}
-\caption{Contribution to the number of extra relativistic degrees of freedom ($\Delta N_{\text{eff}}$) in function of $M_{Z^{\prime}}/g^{\prime}$. The region above the gray line is excluded by the measurements at $2\sigma$ from PLANCK~\cite{Aghanim:2018eyx}. The horizontal dashed lines show the projected sensitivity of the future experiments SPT-3G/SO~\cite{Benson:2014qhw} and CMB-S4~\cite{Abitbol:2019nhf}. }
+\includegraphics[scale=1]{D_Neff.pdf}
+\caption{Contribution to the number of extra relativistic degrees of freedom ($\Delta N_{\text{eff}}$) in function of $M_{Z^{\prime}}/g_X$. The region above the gray line is excluded by the measurements at $2\sigma$ from PLANCK~\cite{Aghanim:2018eyx}. The horizontal dashed lines show the projected sensitivity of the future experiments SPT-3G/SO~\cite{Benson:2014qhw} and CMB-S4~\cite{Abitbol:2019nhf}. }
 \label{fig:Neff}
 \end{figure}
 
@@ -690,11 +690,11 @@ On the other hand, it is remarkable the fact the future CMB experiments~\cite{Be
 \section{Collider constraints}
 The recasting of the latest ATLAS results for the search of dilepton resonances using $139\ \text{fb}^{-1}$~\cite{Aad:2019fac} was done
 in~\cite{Chiang:2019ajm} for the $\operatorname{U}(1)_{B-L}$ model.
-The green (upper) region in fig.~\ref{fig:u1blc} shows the excluded region at $95\%\ \text{C.L.}$ To ease the comparison with other results, we show the exclusion as function of $M_{Z'}/g_{BL}$. In particular, the limit from LEP for $\operatorname{U}(1)_{B-L}$ model is~\cite{Heeck:2014zfa}, 
+The green (upper) region in fig.~\ref{fig:u1blc} shows the excluded region at $95\%\ \text{C.L.}$ To ease the comparison with other results, we show the exclusion as function of $M_{Z'}/g_{BL}$. In particular, the limit from LEP for $\operatorname{U}(1)_{B-L}$ model is~\cite{hep-ph/0408098,Heeck:2014zfa}\footnote{The constraint as function of $h=-1-l$ is given in~\cite{1611.02672}. }, 
 \begin{align}
   M_{Z'}/g_{BL}>6.7\ \text{TeV}\,,&&\text{at $95\%$ C.L }\,,
 \end{align}
-which is obtained from the search for effective four-lepton operators and is valid for $M_{Z'}\gg 200\ \text{GeV}$. This constraint is relevant for $M_{Z'}>5.8\ \text{TeV}$, and corresponds to the excluded magenta (lower) region of fig.~\ref{fig:u1blc}.
+which is obtained from the search for effective four-lepton operators and is valid for $M_{Z'}\gg 200\ \text{GeV}$. This constraint corresponds to the excluded magenta (lower) region of fig.~\ref{fig:u1blc} and start to be relevant for $M_{Z'}>5.8\ \text{TeV}$.
 
 \begin{figure}
     \centering
@@ -710,20 +710,20 @@ The constraint of $\Delta N_{\text{eff}}$ for $\operatorname{U}(1)_{B-L}$ is sho
 
 \appendix
 \section{Anomaly cancellation}
-We use $f$ ($f$) to denote the $X$-charge of the field $f_R$ ($F_L$) for one generation of the SM. The three linear anomalies in $\operatorname{U(1)_X}$ allows to express three $X$-charges in terms of the other two
+We use $f$ ($f$) to denote the general $\operatorname{U}(1)_X$ generation-independent charge assignments of the field $f_R$ ($F_L$). The three linear anomalies in $\operatorname{U(1)_X}$ allows to express three $X$-charges in terms of the other two
 \begin{align}
   u=&-e+\frac{2l}{3}\,,& d=& e-\frac{4l}{3}\,,& q=& -\frac{l}{3}\,.
 \end{align}
-The quadratic anomaly condition is automatically satisfied, while the mixed gauge-gravitational and cubic anomalies depend of any extra singlet quiral fermions of zero hypercharge, like the right-handed counterpart of the Dirac neutrinos. For $\alpha$ extra quiral fields with $X$-charge $n_{\alpha}$, these conditions read
+The quadratic anomaly condition is automatically satisfied, while the mixed gauge-gravitational and cubic anomalies depend of any extra singlet quiral fermions of zero hypercharge, like the right-handed counterpart of the Dirac neutrinos. For $N$ extra quiral fields with $X$-charge $n_{\alpha}$, these conditions read
 \begin{align}
-  \sum_{\alpha} n_{\alpha}+3 (e-2l)=&0\,, &   \sum_{\alpha} n_{\alpha}^3+3 (e-2l)^3=&0\,. &
+  \sum_{\alpha=1}^N n_{\alpha}+3 (e-2l)=&0\,, &   \sum_{\alpha=1}^N n_{\alpha}^3+3 (e-2l)^3=&0\,. &
 \end{align}
-There are many known solutions for the case in which $e-2l=1$. The full set of standard model charges in terms of $l$ is just
+There are many known solutions for the case in which $e-2l=1$, including the $N=3$ case $(-4,-4,+5)$~\cite{Appelquist:2002mw}. The full set of standard model charges in terms of $l$ is just
 \begin{align}
   u=&-1-\frac{4l}{3}\,,&d=&1+\frac{2l}{3}\,,&q=&-\frac{l}{3}\,,&e=&1+2l\,,&h=&-1-l\,.
   \label{Eq:SMCharges}
 \end{align}
-The same solution but in terms of $h$ is given in ~\cite{Okada:2018tgy}.
+The same solution but in terms of $h$ () given in ~\cite{Jenkins:1987ue,1504.06291}.
 
 For this kind of solutions we have that
 \begin{align}
