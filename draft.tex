@@ -187,7 +187,7 @@ The rest of the paper is organized as follows. In the next section we present th
     \hline  
     Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{\mathcal{D}}$ \\ \hline
     % $H $  & 2  1/2  &  0 \\
-    $\eta$  & $\boldsymbol{2}$ & $1/2$  & $1$ \\
+    $\eta$  & $\boldsymbol{2}$ & $1$  & $1$ \\
     $S$ & $\boldsymbol{1}$ & $0$  & $2$ \\
     $\sigma$ & $\boldsymbol{1}$ & $0$ & $3$ \\
     \hline
@@ -590,13 +590,13 @@ Abelian gauge groups $X=B-L,R,D,G,$ as defined in Ref.~\cite{Campos:2017dgc}\foo
   \begin{tabular}{|c|c|c|c|c|c|c|c||c|}
     \hline  
     Fields     & $\operatorname{SU}(2)_L$ &  $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$ & $\operatorname{U}(1)_{\mathcal{D}}$\\ \hline
-$L $     & $\boldsymbol{2}$ & $-1/2$ & $l$      &  $-1$&    $0$ &  $-3/2$&  $-1/2$ & $0$ \\    
-$d_R $   & $\boldsymbol{1}$ & $-1/2$ & $1+2l/3$ &  $1/3$&    $1$&  $0$&    $2/3$ & $0$\\
-$u_R $   & $\boldsymbol{1}$ & $+2/3$ & $-1-4l/3$&  $1/3$&   $-1$&  $1$&   $-1/3$ & $0$ \\
-$Q $     & $\boldsymbol{2}$ & $-1/6$ & $-l/3$   & $1/3$&    $0$&  $1/2$&  $1/6$ & $0$ \\
-$e_R $   & $\boldsymbol{1}$ & $-1$   & $1+2l$   &  $-1$&    $1$ &  $-2$&  $0$ & $0$\\\hline
-$H $     & $\boldsymbol{2}$ & $1/2$  & $-1-l$   &  $0$&    $-1$ &  $1/2$&  $-1/2$ & $0$ \\
-$\eta$   & $\boldsymbol{2}$ & $+1/2$ & $3/4-l$  & $7/4$& $3/4$ &$9/4$&$5/4$ & $0$ \\
+$L $     & $\boldsymbol{2}$ & $-1$ & $l$      &  $-1$&    $0$ &  $-3/2$&  $-1/2$ & $0$ \\    
+$d_R $   & $\boldsymbol{1}$ & $-2/3$ & $1+2l/3$ &  $1/3$&    $1$&  $0$&    $2/3$ & $0$\\
+$u_R $   & $\boldsymbol{1}$ & $+4/3$ & $-1-4l/3$&  $1/3$&   $-1$&  $1$&   $-1/3$ & $0$ \\
+$Q $     & $\boldsymbol{2}$ & $1/3$ & $-l/3$   & $1/3$&    $0$&  $1/2$&  $1/6$ & $0$ \\
+$e_R $   & $\boldsymbol{1}$ & $-2$   & $1+2l$   &  $-1$&    $1$ &  $-2$&  $0$ & $0$\\\hline
+$H $     & $\boldsymbol{2}$ & $1$  & $-1-l$   &  $0$&    $-1$ &  $1/2$&  $-1/2$ & $0$ \\
+$\eta$   & $\boldsymbol{2}$ & $1$ & $3/4-l$  & $7/4$& $3/4$ &$9/4$&$5/4$ & $0$ \\
 $S$      & $\boldsymbol{1}$ & $0$    & $3/2$    & $3/2$&  $3/2$ & $3/2$& $3/2$ & $0$\\
 $\sigma$ & $\boldsymbol{1}$ & $0$    & $13/4$   & $13/4$&  $13/4$ & $13/4$& $13/4$ & $0$\\\hline
 $\nu_{Ri}$& $\boldsymbol{1}$ & $0$   & $-4$& $-4$&  $-4$ & $-4$& $-4$ & $-4$\\
@@ -736,30 +736,43 @@ The quadratic anomaly condition is automatically satisfied, while the mixed gaug
 \begin{align}
   \left[\text{Grav}\right]^{2} \mathrm{U}(1)_{X}:\ \sum_{\alpha=1}^N n_{\alpha}+3 (e-2l)=&0\,, &  \left[\mathrm{U}(1)_{X}\right]^{3}:\ \sum_{\alpha=1}^N n_{\alpha}^3+3 (e-2l)^3=&0\,. &
 \end{align}
-We choose the solutions with $\lambda\equiv e-2l$, such that
+We choose the solutions with $r\equiv e-2l$, such that
 \begin{align}
   \label{eq:anolam}
-  \sum_{\alpha=1}^{n} n_{\alpha}=&-3 \lambda\,,   & \sum_{\alpha=1}^{n} n_{\alpha}^3=&-3 \lambda^3\,.
+  \sum_{\alpha=1}^{N} n_{\alpha}=&-3 r\,,   & \sum_{\alpha=1}^{N} n_{\alpha}^3=&-3 r^3\,.
 \end{align}
-The full set of standard model charges in terms of two parameters~\cite{Appelquist:2002mw,Campos:2017dgc} that we choose as $l$ and $\lambda$, is just
+The full set of standard model charges in terms of two parameters~\cite{Appelquist:2002mw,Campos:2017dgc} that we choose as $l$ and $r$, is just
 \begin{align}
-  u=&-\lambda-\frac{4l}{3}\,,&d=&\lambda+\frac{2l}{3}\,,&q=&-\frac{l}{3}\,,&e=&\lambda+2l\,,&h=&-\lambda-l\,.
+  u=&-r-\frac{4l}{3}\,,&d=&r+\frac{2l}{3}\,,&q=&-\frac{l}{3}\,,&e=&r+2l\,,&h=&-r-l\,.
   \label{Eq:SMCharges}
 \end{align}
-If we now change $f\to  f/\lambda$, such that $\lambda\to 1$, the first of anomaly cancellation~\eqref{eq:anolin} remain invariant, and without lost of generality
-always is possible to normalize the solutions such that the last set~\eqref{eq:anolam} is just
+If we define the Abelian symmetry in which only the right-handed charged fermions have non-vanishing $X$-charges as $\operatorname{U}(1)_R$, then the general anomaly free two-parameter solution can be written as
+\begin{align}
+  X=r R- l Y\,.
+\end{align}
+
+
+If we now change $f\to f'= f/r$ for all the charged fermion $X$-charges, the
+first set of anomaly cancellation condtions~\eqref{eq:anolin} remain
+invariant, and without lost of generality it is always possible to
+normalize the solutions such that the last set~\eqref{eq:anolam} is
+just
 \begin{align}
   \label{eq:anolamnor}
-   \sum_{\alpha=1}^{n} n_{\alpha}=&-3\,,   & \sum_{\alpha=1}^{n} n_{\alpha}^3=&-3\,.
+   \sum_{\alpha=1}^{N} n_{\alpha}^{\prime}=&-3\,,   & \sum_{\alpha=1}^{N} n_{\alpha}^{\prime\, 3}=&-3\,.
 \end{align}
-For example, the solution with $\lambda=3$: $n_{\alpha}=\left( -2,-2,-4,-1 \right)$~\cite{Appelquist:2002mw} can be easily normalized to the form in Eq.~\eqref{eq:anolamnor} with $n_{\alpha}\to n_{\alpha}/3$ as used in Ref.~\cite{Patra:2016ofq}. We work with the normalized solution in terms of a single parameter~\cite{Jenkins:1987ue,Oda:2015gna,Okada:2018tgy}, that we choose to be $l$, as summarized in column $\operatorname{U}(1)_X$ of Table~\ref{tab:partcont3}. In particular, this includes the solution  $n_{\alpha}=(-4,-4,+5)$~\cite{Appelquist:2002mw}. 
-
-
-For this normalized set of solutions we have that
+For example, the solution with $r=3$: $n_{\alpha}=\left( -2,-2,-4,-1 \right)$~\cite{Appelquist:2002mw} can be easily normalized to the form in Eq.~\eqref{eq:anolamnor} with $f\to f/3$
+to $n_{\alpha}'=\left( -2/3,-2/3,-4/3,-1/3 \right)$
+as used in Ref.~\cite{Patra:2016ofq}. In this way, without lost of generality, we work with the normalized solution in terms of a single parameter~\cite{Jenkins:1987ue,Oda:2015gna,Okada:2018tgy} that we choose to be $l$, by setting $r=1$ as summarized in column $\operatorname{U}(1)_X$ of Table~\ref{tab:partcont3}, which is just
+\begin{align}
+  X=R-l\, Y\,.
+\end{align}
+In particular, this includes the solution  $n_{\alpha}=(-4,-4,+5)$~\cite{Appelquist:2002mw}. 
+In general, we have that for $\nu=n_1=n_2$, the extra fermion inside the one-loop neutrino mass diagram in fig.~\ref{fig:zee}, must have charges
 \begin{align}
   \psi=&-\frac{\nu+1}{4}\,,&\eta=&-\frac{\nu+1}{4}-l\,,&\sigma=&\frac{1-3\nu}{4}\,.
 \end{align}
-
+The case for $\nu=-4$ is also displayed in Table~\ref{tab:partcont3}.
 
 %\bibliographystyle{h-physrev4}
 %\bibliographystyle{JHEP-2}
