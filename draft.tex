@@ -64,13 +64,16 @@ Third Author\footnote{\href{mailto:third@author }{third@author}}\\
 \ReportNumbers{XXX-XXX}
 
 \begin{abstract}    
-We propose a model for one-loop Dirac neutrino masses with Majorana mediators which can be dark matter candidates if they are the lightest states circulating the loop. This model is restricted by  neutrino physics,  lepton flavor violation and cosmological constrains, including  
+  The radiative type-I seesaw have been already implemented to explain the lightness of Majorana neutrinos with both Majorana and Dirac heavy fermions, and the lightness of Dirac    neutrinos with                   Dirac heavy fermions. In this work we present a minimal implementation of the radiative type-I seesaw with light Dirac neutrinos and heavy Majorana fermions. An inert doublet and a complex singlet scalar complete the dark sector which is protected by an Abelian fermiophobic gauge symmetry that also forbids three level mass contributions for the full set of light neutrinos. A fermion vector-like extension of the model is also proposed where the light right-handed neutrinos can thermalize in the primordial plasma and the extra gauge boson can be directly produced at colliders. ...
+%some results here
+  This model is restricted by  neutrino physics,  lepton flavor violation and cosmological constrains, including  
 the effective number light neutrinos $N_{\text{eff}}$. Here we find that $M_{Z^{\prime}}/g^{\prime} \gtrsim 40\ \text{TeV}$ in order to satisfy the conditions of $N_{\text{eff}}$..
 \end{abstract}
 
 \section{Introduction}
 \label{sec:intro}
-%Dirac or Majorana
+
+
 The interpretation of neutrino experimental data in terms of neutrino
 oscillations is compatible with both Majorana and Dirac neutrino masses
 \cite{Tanabashi:2018oca}. The former possibility has received the most
@@ -78,93 +81,73 @@ attention but, given the lack of signals in neutrinoless double beta
 decay experiments
 \cite{KamLAND-Zen:2016pfg,Agostini:2018tnm,Aalseth:2017btx,Alduino:2017ehq,Albert:2017owj,Arnold:2016bed},
 the latter cannot be dismissed.
-% Dirac case
 If neutrinos are Dirac particles, the Standard Model (SM) particle
 content must be extended with right-handed neutrinos,
-% with cosmology implications
 which can increase the effective number of light neutrinos,
 $N_{\text{eff}}$, until 6. Therefore, to be compatible with the
 current cosmological restrictions on $N_{\text{eff}}$, the
 interactions of the extra right-handed neutrinos with the primordial
 plasma must be highly suppressed.
 
-%Smallness of neutrinos for both Dirac and Majorana
+
 On the other hand, to give small masses to at least two Majorana or
 Dirac neutrinos, as required to explain the neutrino oscillation
 experiments~\cite{Ahmad:2002jz, Fukuda:1998mi},
-%focus in seesaw type I
 the seesaw mechanism with heavy fermions is usually invoked.
-%tree-level case
 For the tree-level type-I seesaw we can have either light Majorana
 neutrinos with heavy Majorana
 mediators~\cite{Minkowski:1977sc,Yanagida:1979as,GellMann:1980vs,Mohapatra:1979ia}
 or light Dirac neutrinos with heavy Dirac
 mediators~\cite{Roncadelli:1983ty,Roy:1983be,Gu:2007mc,Ma:2014qra}.
-%one-loop case
 The radiative type-I seesaw includes both~\cite{Ma:2006km}
 possibilities~\cite{Farzan:2012sa},
-%new possibility in radiative case
 but now it is also possible to have light Majorana neutrinos with
 heavy Dirac mediators~\cite{Ma:2013yga}.
-%New in this work
 In this work we want to explore the possibility to build a simple
 Dirac radiative type-I seesaw model with heavy Majorana mediators.
-%Old idea but first realized here
 It is worth noticing that this idea have been already illustrated in
 an extension of the minimal supersymmetric standard
 model~\cite{Demir:2007dt} but without show any explicit solution.
 
-%Features of the new propossed solution
 In general, solutions for light Dirac neutrino masses require a
 continuous symmetry to guarantee their Diracness. This symmetry is
 usually identified as the local $\operatorname{U}(1)_{B-L}$.
 Additionally, ad-hoc discrete symmetries are invoked to forbid tree
 level Dirac or Majorana mass terms for the light right-handed
 neutrinos~\cite{Roncadelli:1983ty,Han:2018zcn,Wang:2017mcy}.
-%tree-level without adhoc symmetries
 However, tree-level Dirac type-I seesaw with proper choices for the
 $\operatorname{U}(1)_{B-L}$ charges have been shown to be consistent
 without require any extra ad-hoc discrete symmetries~\cite{Ma:2014qra}.
-%one-loop 
 In recent works, it has been shown that even for one-loop Dirac
 neutrino masses, it is possible to have $\operatorname{U}(1)_{B-L}$ as
 the only extra symmetry beyond the SM~\cite{Calle:2018ovc,Bonilla:2018ynb,Saad:2019bqf}\footnote{
-%extra-loops
   For extensions with only extra scalars, minimal solutions have been found with two and three loops~\cite{Saad:2019bqf}}.
-%conexion with dark matter
+
 As a bonus in this case, the new scalars and fermions circulating the
 loop can be dark matter candidates with the stability of the lightest
 of them guaranteed by the very same continuous symmetry.
-% remark
 We focus here in solutions for the radiative Dirac type-I seesaw with
 Majorana mediators, which have only an extra local symmetry responsible for the
 Diracness of the light neutrinos, the absence of any tree-level
 mass, and the existence of a dark sector constituted by the
 particles circulating the loop.
 
-%conexion with DM
 In fact, another evidence that the SM is not a complete theory is the
 missing matter content of the universe, which is known as dark matter
 (DM).
-% DM as particle
 The main proposals that explain DM as a particle are given in
 Ref.~\cite{Bertone:2004pz}.
-%not found
 However, there have been only gravitational evidence for the existence
 of dark matter so far.
-% too many possibilities
 Without evidence of DM as a particle, there is not a clear path to pin
 out the DM properties nor the possible heavier companions of some
 extended dark sector. 
-% connect with other phenomena
 Linking the dark sector to other specific phenomenology allows to
 reduce the arbitrariness in the model building.
-% loop
 In our construction, the dark sector is related to the heavy sector
 responsible of the lightness of the neutrinos and the same symmetry
 which guarantees the lightness of the Dirac neutrinos is the
 responsible of the stability of the lightest dark particle (LDP).
-% new particle prediction
 Therefore, the number of specific models is quite restricted.
 
 % We will make use of the scotogenic model~\cite{Ma:2006km}. In
@@ -792,3 +775,29 @@ The case for $\nu=-4$ is also displayed in Table~\ref{tab:partcont3}.
 %%% TeX-master: "draft"
 %%% ispell-local-dictionary: "american"
 %%% End: 
+
+
+% Dirac or Majorana
+% Dirac case
+% with cosmology implications
+
+% Smallness of neutrinos for both Dirac and Majorana
+% focus in seesaw type I
+%tree-level case
+%one-loop case
+%new possibility in radiative case
+%New in this work
+%Old idea but first realized here
+%Features of the new propossed solution
+%tree-level without adhoc symmetries
+%one-loop 
+%extra-loops
+%conexion with dark matter
+% remark
+% conexion with DM
+% DM as particle
+%not found
+% too many possibilities
+% connect with other phenomena
+% loop
+% new particle prediction
