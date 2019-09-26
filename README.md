@@ -1,4 +1,4 @@
-# THDM with Dirac neutrino masses and Majorana mediator
+# Dirac neutrino mass generation from Majorana messenger
 **Julián Calle, Diego Restrepo, Óscar Zapata**
 
 [![arXiv](https://img.shields.io/badge/arXiv-1909.09574%20-green.svg)](https://arxiv.org/abs/1909.09574)
